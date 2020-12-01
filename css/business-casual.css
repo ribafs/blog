@@ -28,7 +28,7 @@ p {
 .title{
   font-size: 2rem;
   font-family: 'Raleway';
-  color: rgba(255, 255, 255, 0.3);
+  color: #F00;    
 }
 
 .text-faded {
