@@ -28,7 +28,13 @@ p {
 .title{
   font-size: 2rem;
   font-family: 'Raleway';
-  color: #F00;    
+  color: #FFF;    
+}
+
+.links{
+  font-size: 1rem;
+  font-family: 'Raleway';
+  color: #FFF;    
 }
 
 .text-faded {
@@ -55,8 +61,8 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section-heading {
@@ -124,7 +130,7 @@ p {
 
 @media (min-width: 992px) {
   .intro .intro-img {
-    width: 75%;
+    width: 60%;
     float: right;
   }
   .intro .intro-text {
@@ -143,7 +149,7 @@ p {
 
 @media (min-width: 1200px) {
   .intro .intro-text {
-    width: 45%;
+    width: 55%;
   }
 }
 
