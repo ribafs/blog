@@ -1,0 +1,731 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/prog/responsivo/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Site responsivo - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trabalho/contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/prog/responsivo.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#tornar-sites-responsivos" class="nav-link">Tornar sites responsivos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="tornar-sites-responsivos">Tornar sites responsivos</h2>
+<p>Para que se adaptem adequadamente a qualquer dispositivo que os acessem.</p>
+<p>As media queries são um recurso muito importante para isso.</p>
+<h3 id="para-pequenos-dispositivos">Para pequenos dispositivos:</h3>
+<ul>
+<li>Coluna única</li>
+<li>Menu hamburger</li>
+</ul>
+<p>Aqui, vamos definir uma classe que só será carregada quando a largura de tela do dispositivo for de 900 pixels ou meno4. E, ainda, vai alterar a largura da classe ".menu" para 100% do tamanho da tela do navegador. </p>
+<p>Um media query que permite fazer isso deve se parecer com este código abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="c">/* .menu { width:100%; } */</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Alguns elementos da página não mudam ao serem acessados por dispositivos diferentes:</p>
+<ul>
+<li>background-color</li>
+<li>color</li>
+<li>...</li>
+</ul>
+<p>Algumas propriedades quase sempre mudam:</p>
+<ul>
+<li>height</li>
+<li>width</li>
+<li>margin</li>
+<li>padding</li>
+<li>...</li>
+</ul>
+<p>Uma boa alternativa de medida é a % (em imagens usemos somente na width) mas existem outras.</p>
+<p>Também é possível configurar larguras fixas para larguras particulares de tela. Por exemplo, configurar a largura de menu para 600 pixels se a to tamanho da tela do dispositivo for de 900 pixels. Veja abaixo códigos que você pode usar para aplicar essas mudanças. </p>
+<p>Exemplos
+    • Se o tamanho da tela for 900 pixels ou menor, é possível configurar uma classe de largura de menus para 600 pixels usando: </p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="c">/* .menu { width:600px; } */</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>•<span class="w"> </span><span class="nv">Se</span><span class="w"> </span><span class="nv">o</span><span class="w"> </span><span class="nv">tamanho</span><span class="w"> </span><span class="nv">da</span><span class="w"> </span><span class="nv">tela</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="mi">700</span><span class="w"> </span><span class="nv">pixels</span><span class="w"> </span><span class="nv">ou</span><span class="w"> </span><span class="nv">menor</span>,<span class="w"> </span>é<span class="w"> </span><span class="nv">poss</span>í<span class="nv">vel</span><span class="w"> </span><span class="nv">configurar</span><span class="w"> </span><span class="nv">uma</span><span class="w"> </span><span class="nv">classe</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">largura</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">menus</span><span class="w"> </span><span class="nv">para</span><span class="w"> </span><span class="mi">400</span><span class="w"> </span><span class="nv">pixels</span><span class="w"> </span><span class="nv">usando</span>:
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">700px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="c">/* .menu { width:400px; } */</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>O tráfego de dispositivos móveis na web ultrapassou os 51% tornando-se assim muito importante que a página se adapte a ele, caso contrário perderemos visitação.</p>
+<p>Dicas:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">img</span><span class="p">{</span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">img-full</span><span class="p">{</span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">780px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="p">.</span><span class="nc">full-width-img</span><span class="w"> </span><span class="p">{</span>
+<span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Importante usar srcset</p>
+<p>Para servir diferentes versões escalonadas para diferentes dispositivos, você precisa usar o atributo HTML srcset em suas tags img, para especificar mais de um tamanho de imagem para escolher.</p>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nt">img</span><span class="w"> </span><span class="nt">srcset</span><span class="o">=</span><span class="s2">&quot;large-img.jpg 1024w,</span>
+<span class="s2">middle-img.jpg 640w,</span>
+<span class="s2">small-img.jpg  320w&quot;</span>
+<span class="nt">src</span><span class="o">=</span><span class="s2">&quot;small.jpg&quot;</span>
+<span class="o">/&gt;</span>
+</code></pre></div>
+
+<h3 id="tamanhos-de-tela-comuns">Tamanhos de tela comuns</h3>
+<div class="highlight"><pre><span></span><code>• Móvel: 360 x 640 
+• Móvel: 375 x 667 
+• Móvel: 360 x 720 
+• iPhone X: 375 x 812 
+• Pixel 2: 411 x 731 
+• Tabuleiro: 768 x 1024 
+• Portátil: 1366 x 768 
+• Laptop ou desktop de alta resolução: 1920 x 1080
+</code></pre></div>
+
+<h3 id="available-breakpoints">Available breakpoints</h3>
+<p>Bootstrap includes six default breakpoints, sometimes referred to as grid tiers, for building responsively. These breakpoints can be customized if you’re using our source Sass files.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">Breakpoint</span><span class="w">  </span><span class="nt">Class</span><span class="w"> </span><span class="nt">infix</span><span class="w">     </span><span class="nt">Dimensions</span>
+<span class="nt">X-Small</span><span class="w">     </span><span class="nt">None</span><span class="w">            </span><span class="o">&lt;</span><span class="nt">576px</span>
+<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span>
+<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span>
+<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">extra</span><span class="w"> </span><span class="nt">large</span><span class="w">   </span><span class="nt">xxl</span><span class="w">     </span><span class="err">≥</span><span class="nt">1400px</span>
+<span class="err">```</span><span class="nt">css</span>
+<span class="o">[</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/](</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/)</span>
+
+<span class="nt">Principais</span>
+<span class="err">```</span><span class="nt">css</span>
+<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span>
+<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span>
+<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span>
+
+<span class="nt">PX</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">EM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">REM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">Viewport</span><span class="w"> </span><span class="nt">Units</span><span class="w"> </span><span class="nt">para</span><span class="w"> </span><span class="nt">projeto</span><span class="w"> </span><span class="nt">responsivo</span>
+<span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">PX</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">um</span><span class="w"> </span><span class="nt">único</span><span class="w"> </span><span class="nt">pixel</span><span class="w"> </span>
+<span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">EM</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">unidade</span><span class="w"> </span><span class="nt">relativa</span><span class="w"> </span><span class="nt">com</span><span class="w"> </span><span class="nt">base</span><span class="w"> </span><span class="nt">no</span><span class="w"> </span><span class="nt">tamanho</span><span class="w"> </span><span class="nt">da</span><span class="w"> </span><span class="nt">fonte</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">elemento</span><span class="o">.</span><span class="w"> </span>
+<span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">REM</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">unidade</span><span class="w"> </span><span class="nt">relativa</span><span class="w"> </span><span class="nt">com</span><span class="w"> </span><span class="nt">base</span><span class="w"> </span><span class="nt">no</span><span class="w"> </span><span class="nt">tamanho</span><span class="w"> </span><span class="nt">da</span><span class="w"> </span><span class="nt">fonte</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">elemento</span><span class="o">.</span><span class="w"> </span>
+<span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">VH</span><span class="o">,</span><span class="w"> </span><span class="nt">VW</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="nt">da</span><span class="w"> </span><span class="nt">altura</span><span class="w"> </span><span class="nt">ou</span><span class="w"> </span><span class="nt">largura</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">viewport</span><span class="o">.</span><span class="w"> </span>
+<span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">a</span><span class="w"> </span><span class="nt">porcentagem</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">elemento</span><span class="w"> </span><span class="nt">pai</span><span class="o">.</span><span class="w"> </span>
+</code></pre></div>
+
+<h3 id="unidades-relativas-do-css">Unidades relativas do CSS</h3>
+<div class="highlight"><pre><span></span><code>• %
+• em
+• rem
+• vw
+• vh
+</code></pre></div>
+
+<p>Podemos dizer que se a largura da tela for maior que 768 px use um estilo diferente</p>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">myImage</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>O 768px é um breakpoint, menor ou igual use o media querie, maior não use.</p>
+<h3 id="flexbox">Flexbox</h3>
+<p>O display: flex transforma o <nav> em uma caixa flexível, e o justify-content: space-around informa ao navegador que os itens dentro da caixa flexível devem ter espaço ao redor deles. Assim, o navegador distribui todo o espaço restante igualmente entre os três itens.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-around</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="tipografia-responsiva">Tipografia responsiva</h3>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

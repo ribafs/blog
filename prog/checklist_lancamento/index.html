@@ -1,0 +1,817 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/prog/checklist_lancamento/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Checklist de Lançamento - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trabalho/contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/prog/checklist_lancamento.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#checklist-de-lancamento-do-site" class="nav-link">Checklist de Lançamento do Site</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="checklist-de-lancamento-do-site">Checklist de Lançamento do Site</h2>
+<p>Antes de colocar o site no ar, de publicá-lo, precisamos conferir vários fatores importantes, para que o site fique como queremos e venha a nos ser úteis da melhor forma e tambem aos visitantes</p>
+<h3 id="planejamento-basico">Planejamento Básico</h3>
+<ul>
+<li>O seu site possui um nicho definido?</li>
+<li>Foi criada uma persona que seja a representante ideal do seu público-alvo?</li>
+<li>O modelo de negócios está definido?</li>
+<li>Você tem um posicionamento único de mercado?</li>
+<li>Há equilíbrio entre a necessidade de rentabilizar o site e os interesses do público-alvo?</li>
+<li>Você possui uma USP (Unique Selling Proposition)?</li>
+</ul>
+<h3 id="navegacao-e-estrutura">Navegação e Estrutura</h3>
+<ul>
+<li>Há uma página apresentando o responsável pelo site?</li>
+<li>É fácil entrar em contato com o autor?</li>
+<li>É fácil acessar os conteúdos do site?</li>
+<li>Existe um mapa do site?</li>
+<li>Os links no texto são facilmente identificáveis?</li>
+<li>O mecanismo de busca funciona bem?</li>
+<li>A caixa de busca fica próxima ao canto superior direito?</li>
+<li>Existe uma destacada área para relacionamento?</li>
+<li>As chamadas na home são clicáveis?</li>
+<li>O link para ler o restante do texto na home está destacado?</li>
+<li>A paginação para posts anteriores está fácil?</li>
+<li>Existem links quebrados ou funcionalidades com defeito?</li>
+<li>O site foi testado em vários navegadores e sistemas operacionais?</li>
+<li>O site é responsivo para dispositivos móveis?</li>
+<li>Há uma versão para navegadores ledores de tela?</li>
+<li>O usuário é capaz de identificar em que seção do blog está?</li>
+<li>O usuário consegue voltar e desfazer ações?</li>
+<li>As páginas seguem um padrão, mantendo a consistência?</li>
+<li>As mensagens de erro sugerem a solução?</li>
+</ul>
+<h3 id="originalidade">Originalidade</h3>
+<ul>
+<li>O site tem um domínio próprio?</li>
+<li>O visual é exclusivo?</li>
+<li>O conteúdo é original?</li>
+<li>Provas sociais estão sendo exibidas?</li>
+</ul>
+<h3 id="conteudo">Conteúdo</h3>
+<ul>
+<li>Existe uma estratégia de conteúdo definida?</li>
+<li>Há um sistema de anotações e referência preparado?</li>
+<li>Há um calendário de publicação definido?</li>
+<li>As letras possuem um tamanho legível?</li>
+<li>O contraste das letras com a cor de fundo é bom?</li>
+<li>Existe uma página explicando como o conteúdo pode ser usado?</li>
+<li>Os principais trechos ficam destacados em negrito?</li>
+<li>Os parágrafos são curtos e possuem espaçamento entre eles?</li>
+<li>Elementos como lista, citações e imagens estão bem formatados?</li>
+<li>Há erros de português?</li>
+<li>O título desperta a curiosidade do leitor?</li>
+<li>As frases são escritas em ordem direta?</li>
+<li>Os entretítulos são usados para dividir o texto?</li>
+<li>Existe uma lista com os artigos mais acessados?</li>
+<li>As categorias estão bem divididas?</li>
+<li>As imagens possuem legendas e o atributo alt?</li>
+<li>Há uma lista de conteúdos relacionados?</li>
+<li>O site fala a linguagem do usuário?</li>
+<li>Todas as seções possuem conteúdo inicial publicado?</li>
+<li>O esquema de cores é definido e consistente?</li>
+<li>Os bancos de imagens estão definidos?</li>
+</ul>
+<h3 id="seo-otimizacao-para-mecanismos-de-busca">SEO - Otimização para mecanismos de busca</h3>
+<ul>
+<li>A velocidade de carregamento do site é inferior a 4 segundos?</li>
+<li>O robots.txt está configurado?</li>
+<li>Cada página possui meta tags específicas?</li>
+<li>Está sendo elaborado um sitemap em XML?</li>
+<li>O site está cadastrado no Google Search Console?</li>
+<li>O código é válido e otimizado?</li>
+<li>Páginas de categorias, tags e demais índices estão com a indexação barrada?</li>
+<li>Os links internos estão bem estruturados?</li>
+<li>Há vazamento para links sem importância?</li>
+<li>Há um mecanismo de acompanhamento das estatísticas?</li>
+<li>Há um mecanismo de acompanhamento de rankings e palavras-chaves?</li>
+<li>Os conteúdos mais importantes têm, em média, 1.500 palavras?</li>
+<li>É possível escrever títulos e meta descrições para os mecanismos de busca?</li>
+<li>As páginas de conteúdo possuem links de saída?</li>
+<li>Cada página foca em apenas uma palavra-chave diferente?</li>
+<li>As palavras-chaves estão aparecendo no texto e no título?</li>
+<li>Existe um bom sistema de cache em funcionamento?</li>
+<li>Um CDN está instalado e configurado?</li>
+<li>Existe um sistema de gerenciamento de tarefas?</li>
+</ul>
+<h3 id="trafego-e-conversao">Tráfego e Conversão</h3>
+<ul>
+<li>As fontes de tráfego estão definidas?</li>
+<li>Os limites de atuação das suas campanhas de anúncios estão definidos?</li>
+<li>A análise das quatro métricas de anúncios está definida?</li>
+<li>Existe uma estratégia de otimização de campanhas de anúncios?</li>
+</ul>
+<h3 id="seguranca">Segurança</h3>
+<ul>
+<li>O gerenciador de conteúdos está com a versão mais atualizada?</li>
+<li>O usuário administrador padrão foi excluído e criado um novo administrador?</li>
+<li>A senha do administrador é única e exclusiva para o site?</li>
+<li>Está sendo feito um backup periódico do banco de dados e dos arquivos?</li>
+</ul>
+<h3 id="compartilhamento-e-redes-sociais">Compartilhamento e Redes Sociais</h3>
+<ul>
+<li>Existem links diretos para cada página de conteúdo?</li>
+<li>Os links diretos estão em formato amigável?</li>
+<li>Existem links para as suas redes sociais?</li>
+<li>Existem botões de compartilhamento para as redes sociais?</li>
+<li>É possível imprimir o conteúdo em um formato amigável?</li>
+<li>Sua estratégia de divulgação nas redes sociais está definida?</li>
+<li>Sua divulgação nas redes sociais está automatizada?</li>
+</ul>
+<h3 id="relacionamento-por-e-mail">Relacionamento por e-mail</h3>
+<ul>
+<li>Há um sistema para captura e envio de e-mails?</li>
+<li>Há um incentivo para os visitantes deixarem seus e-mails?</li>
+<li>Existem landing pages voltadas para a captura de e-mails?</li>
+<li>Existe uma sequência de e-mails programada?</li>
+<li>Existe um funil de vendas ao final da sequência de e-mails?</li>
+<li>Há uma meta diária de captura?</li>
+<li>Um popup de captura foi testado?</li>
+</ul>
+<h3 id="comentarios-e-contatos">Comentários e Contatos</h3>
+<ul>
+<li>É possível assinar os feeds dos comentários?</li>
+<li>É possível acompanhar por e-mail novos comentários em um post que o leitor comentou?</li>
+<li>Há um link direto para cada comentário?</li>
+<li>Está clara a hora e a data do comentário?</li>
+<li>O avatar de quem comenta está funcionando?</li>
+<li>Listas de comentários muito extensas estão com paginação?</li>
+<li>É fácil responder quem comentou e a resposta ir por e-mail e ficar no site?</li>
+<li>Os comentários do autor do site são diferenciados dos demais?</li>
+<li>Os spams de comentários estão sendo barrados com eficiência?</li>
+<li>Existe um sistema para responder comentários e contatos?</li>
+</ul>
+<h3 id="as-ferramentas">As ferramentas</h3>
+<h4 id="bancos-de-imagens">Bancos de Imagens</h4>
+<p>As imagens gratuitas são boas para iniciantes. Se o seu projeto estiver em um nível mais avança- do, escolha um banco pago. Minha sugestão é o Fotolia.</p>
+<h4 id="pexels-gratuito">Pexels (gratuito):</h4>
+<p><a href="http://pexels.com/">http://pexels.com/</a></p>
+<h4 id="free-images-gratuito">Free Images (gratuito):</h4>
+<p><a href="http://www.freeimages.com/">http://www.freeimages.com/</a></p>
+<h4 id="minimography-gratuito">Minimography (gratuito):</h4>
+<p><a href="http://minimography.com/">http://minimography.com/</a></p>
+<h4 id="shutterstock">Shutterstock:</h4>
+<p><a href="http://www.shutterstock.com/pt/">http://www.shutterstock.com/pt/</a></p>
+<h4 id="fotolia">Fotolia:</h4>
+<p><a href="https://br.fotolia.com/">https://br.fotolia.com/</a></p>
+<h4 id="istockphoto">iStockphoto:</h4>
+<p><a href="http://www.istockphoto.com/">http://www.istockphoto.com/</a></p>
+<h4 id="getty-images-brasil">Getty Images Brasil:</h4>
+<p><a href="http://www.gettyimages.com.br/">http://www.gettyimages.com.br/</a></p>
+<h4 id="photodune">Photodune:</h4>
+<p><a href="http://photodune.net/">http://photodune.net/</a></p>
+<h4 id="registro-de-dominio">Registro de Domínio</h4>
+<p>Use o Registro.br para registrar o domínio no Brasil e o Name.com para o seu domínio internacional. Evite registrar aquele domínio gratuito que os provedores de hospedagem oferecem, pois você ficará preso a eles.</p>
+<h4 id="registrobr">Registro.br</h4>
+<p><a href="https://registro.br/">https://registro.br/</a></p>
+<h4 id="namecom">Name.com</h4>
+<p><a href="http://name.com/">http://name.com/</a></p>
+<h4 id="analise-de-metricas">Análise de Métricas</h4>
+<p>Google Analytics (essencial)</p>
+<p><a href="https://analytics.google.com/">https://analytics.google.com/</a></p>
+<p>CrazyEgg (avançado)</p>
+<p><a href="https://www.crazyegg.com/">https://www.crazyegg.com/</a></p>
+<h4 id="seo-otimizacao-para-mecanismos-de-busca_1">SEO - Otimização para Mecanismos de Busca</h4>
+<p>Google Search Console (essencial)</p>
+<p><a href="https://www.google.com/webmasters/tools/?hl=pt-BR">https://www.google.com/webmasters/tools/?hl=pt-BR</a></p>
+<p>Google Adwords (básico)</p>
+<p><a href="http://adwords.google.com/">http://adwords.google.com/</a></p>
+<h4 id="teste-e-otimizacao-de-design">Teste e otimização de design</h4>
+<p>Visual Website Optimizer (avançado)</p>
+<p><a href="https://vwo.com/">https://vwo.com/</a></p>
+<p>Optimizely (avançado)</p>
+<p><a href="https://www.optimizely.com/">https://www.optimizely.com/</a></p>
+<p>Wordpress Filler Content (básico, voltado para Wordpress)</p>
+<p><a href="http://www.wpfill.me/">http://www.wpfill.me/</a></p>
+<h4 id="e-mail-service-provider">E-mail Service Provider</h4>
+<p>Mailchimp
+<a href="http://mailchimp.com/">http://mailchimp.com/</a></p>
+<p>E-goi
+<a href="http://www.e-goi.com.br/">http://www.e-goi.com.br/</a></p>
+<h4 id="landing-pages">Landing Pages</h4>
+<p>Unbounce
+<a href="http://unbounce.com/">http://unbounce.com/</a></p>
+<p>LeadPages
+<a href="http://www.leadpages.net/">http://www.leadpages.net/</a></p>
+<h4 id="produtividade">Produtividade</h4>
+<p>Wunderlist (básico)
+<a href="http://wunderlist.com/">http://wunderlist.com/</a></p>
+<p>Criar um site é uma tarefa empolgante — e publicá-lo, ainda mais. Ver o seu site online é o auge de todo o planejamento estratégico e da elaboração do design. Dito isso, você deve fazer tudo o que estiver ao seu alcance para garantir que ele esteja praticamente perfeito no momento em que você o compartilhar com o mundo. </p>
+<p>Quando se trata do design de um site, erros acontecem, tarefas ficam inacabadas e, às vezes, a tecnologia simplesmente não corresponde às nossas expectativas. Por essas e outras razões, seguir uma checklist para o lançamento de um site é uma ótima maneira de garantir que você tenha pensado em tudo antes de clicar no botão "publicar". </p>
+<p>Checklist para lançamento de site, que inclui 50 itens essenciais a serem observados antes, durante e após a publicação do seu site.</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Analise</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">precisa</span><span class="w"> </span><span class="n">ser</span><span class="w"> </span><span class="n">alterado</span><span class="w"> </span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Verifique</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">velocidade</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">Pesquise</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">concorrentes</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">tendências</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">setor</span><span class="w"> </span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">Identifique</span><span class="w"> </span><span class="n">seus</span><span class="w"> </span><span class="n">objetivos</span><span class="w"> </span>
+<span class="mf">5.</span><span class="w"> </span><span class="kr">List</span><span class="n">e</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">itens</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ação</span><span class="w"> </span>
+<span class="mf">6.</span><span class="w"> </span><span class="n">Escolha</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">criador</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">sites</span><span class="p">,</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">CMS</span><span class="p">,</span><span class="w"> </span><span class="n">crie</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">zero</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">customizando</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">template</span>
+<span class="mf">7.</span><span class="w"> </span><span class="n">Escolha</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">provedor</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">sites</span><span class="w"> </span>
+<span class="mf">8.</span><span class="w"> </span><span class="kd">Def</span><span class="n">ina</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="kd">data</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">publicação</span><span class="w"> </span>
+<span class="mf">9.</span><span class="w"> </span><span class="n">Conheça</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">etapas</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">criação</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">10.</span><span class="w"> </span><span class="kd">Def</span><span class="n">ina</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">11.</span><span class="w"> </span><span class="n">Planeje</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">elementos</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">design</span><span class="w"> </span>
+<span class="mf">12.</span><span class="w"> </span><span class="n">Crie</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">páginas</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">13.</span><span class="w"> </span><span class="n">Otimize</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">fotos</span><span class="w"> </span>
+<span class="mf">14.</span><span class="w"> </span><span class="n">Adicione</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="nb">log</span><span class="n">o</span><span class="w"> </span>
+<span class="mf">15.</span><span class="w"> </span><span class="nb">Int</span><span class="n">egre</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">software</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">analytics</span><span class="w"> </span>
+<span class="mf">16.</span><span class="w"> </span><span class="n">Compre</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">nome</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">domínio</span><span class="w"> </span>
+<span class="mf">17.</span><span class="w"> </span><span class="n">Crie</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">design</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">página</span><span class="w"> </span><span class="s">&quot;Em construção&quot;</span>
+<span class="mf">18.</span><span class="w"> </span><span class="nb">Pos</span><span class="n">icione</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">CTAs</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kr">for</span><span class="n">ma</span><span class="w"> </span><span class="n">estratégica</span><span class="w"> </span>
+<span class="mf">19.</span><span class="w"> </span><span class="n">Adicione</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="kr">for</span><span class="n">mulário</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">inscrição</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">email</span><span class="w"> </span>
+<span class="mf">20.</span><span class="w"> </span><span class="n">Desenvolva</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">design</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">mobile</span><span class="w"> </span>
+<span class="mf">21.</span><span class="w"> </span><span class="n">Otimize</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">SEO</span><span class="w"> </span><span class="kr">on</span><span class="o">-</span><span class="n">page</span><span class="w"> </span><span class="p">(</span><span class="n">na</span><span class="w"> </span><span class="n">página</span><span class="p">)</span>
+<span class="mf">22.</span><span class="w"> </span><span class="n">Crie</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">suas</span><span class="w"> </span><span class="n">redes</span><span class="w"> </span><span class="n">sociais</span><span class="w"> </span>
+<span class="mf">23.</span><span class="w"> </span><span class="n">Conecte</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">transfira</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">domínio</span><span class="w"> </span>
+<span class="mf">24.</span><span class="w"> </span><span class="n">Atualize</span><span class="w"> </span><span class="n">sua</span><span class="w"> </span><span class="kd">data</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">copyright</span><span class="w"> </span>
+<span class="mf">25.</span><span class="w"> </span><span class="n">Revise</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="kr">cont</span><span class="n">eúdo</span><span class="w"> </span><span class="n">escrito</span><span class="w"> </span>
+<span class="mf">26.</span><span class="w"> </span><span class="n">Teste</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="kr">for</span><span class="n">mulários</span><span class="w"> </span>
+<span class="mf">27.</span><span class="w"> </span><span class="n">Faça</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="nb">log</span><span class="n">o</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">página</span><span class="w"> </span><span class="n">inicial</span><span class="w"> </span>
+<span class="mf">28.</span><span class="w"> </span><span class="n">Revise</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">design</span><span class="w"> </span>
+<span class="mf">29.</span><span class="w"> </span><span class="n">Obtenha</span><span class="w"> </span><span class="n">feedback</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">amigo</span><span class="w"> </span>
+<span class="mf">30.</span><span class="w"> </span><span class="n">Verifique</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="n">há</span><span class="w"> </span><span class="n">links</span><span class="w"> </span><span class="n">corrompidos</span><span class="w"> </span>
+<span class="mf">31.</span><span class="w"> </span><span class="n">Teste</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">UX</span><span class="w"> </span>
+<span class="mf">32.</span><span class="w"> </span><span class="n">Examine</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">acessibilidade</span><span class="w"> </span>
+<span class="mf">33.</span><span class="w"> </span><span class="n">Atualize</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">informações</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kr">cont</span><span class="n">ato</span><span class="w"> </span>
+<span class="mf">34.</span><span class="w"> </span><span class="n">Configure</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">chat</span><span class="w"> </span><span class="n">ao</span><span class="w"> </span><span class="n">vivo</span><span class="w"> </span>
+<span class="mf">35.</span><span class="w"> </span><span class="n">Personalize</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">páginas</span><span class="w"> </span><span class="mf">404</span><span class="w"> </span>
+<span class="mf">36.</span><span class="w"> </span><span class="n">Escreva</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">política</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">privacidade</span><span class="w"> </span>
+<span class="mf">37.</span><span class="w"> </span><span class="n">Planeje</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">otimização</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">SEO</span><span class="w"> </span><span class="n">off</span><span class="o">-</span><span class="n">page</span><span class="w"> </span><span class="p">(</span><span class="kr">for</span><span class="n">a</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">página</span><span class="p">)</span>
+<span class="mf">38.</span><span class="w"> </span><span class="ow">Or</span><span class="n">ganize</span><span class="w"> </span><span class="n">sua</span><span class="w"> </span><span class="kr">list</span><span class="n">a</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="kr">cont</span><span class="n">atos</span><span class="w"> </span>
+<span class="mf">39.</span><span class="w"> </span><span class="n">Prepare</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="kr">cont</span><span class="n">as</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">redes</span><span class="w"> </span><span class="n">sociais</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">divulgação</span><span class="w"> </span>
+<span class="mf">40.</span><span class="w"> </span><span class="n">Clique</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">publicar</span><span class="w"> </span>
+<span class="mf">41.</span><span class="w"> </span><span class="n">Faça</span><span class="w"> </span><span class="n">backup</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">design</span><span class="w"> </span>
+<span class="mf">42.</span><span class="w"> </span><span class="n">Realize</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">teste</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">usabilidade</span><span class="w"> </span>
+<span class="mf">43.</span><span class="w"> </span><span class="n">Verifique</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">segurança</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">com</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">certificado</span><span class="w"> </span><span class="n">SSL</span><span class="w"> </span>
+<span class="mf">44.</span><span class="w"> </span><span class="n">Envie</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">indexação</span><span class="w"> </span>
+<span class="mf">45.</span><span class="w"> </span><span class="n">Verifique</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">análises</span><span class="w"> </span>
+<span class="mf">46.</span><span class="w"> </span><span class="n">Teste</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">velocidade</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">novo</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">47.</span><span class="w"> </span><span class="n">Promova</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">site</span><span class="w"> </span>
+<span class="mf">48.</span><span class="w"> </span><span class="n">Elabore</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">plano</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">monitoramento</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">desempenho</span><span class="w"> </span>
+<span class="mf">49.</span><span class="w"> </span><span class="kr">To</span><span class="n">rne</span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">multilíngue</span><span class="w"> </span>
+<span class="mf">50.</span><span class="w"> </span><span class="n">Mapeie</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">plano</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">manutenção</span>
+</code></pre></div>
+
+<p>Detalhes sobre cada item:</p>
+<p><a href="https://pt.wix.com/blog/2018/05/checklist-novo-site/">https://pt.wix.com/blog/2018/05/checklist-novo-site/</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

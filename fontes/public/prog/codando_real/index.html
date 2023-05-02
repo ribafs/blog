@@ -1,0 +1,666 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/prog/codando_real/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Codando na vida real - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trabalho/contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/prog/codando_real.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#codando-na-vida-real" class="nav-link">Codando na vida real</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="codando-na-vida-real">Codando na vida real</h2>
+<p>Um exemplo prático e real de programação para atender um pedido extra de um cliente</p>
+<p>Ao criar um pequeno CRUD para um cliente, após concluir ele me pergunta se eu posso adicionar ao banco alguns registros que ele criou em um arquivo texto.</p>
+<p>Era um pequeno cadastro de produtos:</p>
+<p>descricao
+preco</p>
+<p>Os arquivos estavam mais ou menos assim:</p>
+<p>Banana prata
+3.15</p>
+<p>Manga rosa
+2.85</p>
+<p>...</p>
+<p>Num total de 508 linhas.</p>
+<p>Acho importante por dois motivos: desafia meus conhecimentos e me ajuda a melhorar minha capacidade de resolver problemas. Além disso, o que é mais importante, ajuda o cliente a evitar trabalho. Imagina digitar 254 registros manualmente?! É importante manter este número em mente (254) para aferir o resultado final.</p>
+<p>A solução foi encontrada usando o VSCode e o PHP.</p>
+<h3 id="vscode">VSCode</h3>
+<ul>
+<li>Abro o VSCode</li>
+<li>Crio um novo arquivo tipo Plain text</li>
+<li>Copio e colo todo o conteúdo do arquivo texto contendo os produtos no VSCode</li>
+<li>Usando expressões regulares remover todas as linhas em branco</li>
+<li>Teclo Ctrl+H para procurar e sobrescrever. Na caixa de texto superior digito "^(?:[\t ]*(?:\r?\n|\r))+" sem as aspas. A de baixo deixo vazia e clico no botão Replace All</li>
+</ul>
+<p>Prontinho. Todas as linhas em branco foram removidas</p>
+<p>Procurei por uma rotina para manipular o arquivo texto que restou. Neste momento minha preferência é por soluções mais simples. Acho isso importante em si e em especial porque gosto de compartilhar e ensinar o compartilho, portanto a mais simples é a melhor. Encontrei várias soluções, inclusive uma função criada pelo programador no site SitePoint.</p>
+<p>A solução mais simples que encontrei para transformar o arquivo texto em um array em PHP foi esta abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="x">$linhas = file(&quot;elias.txt&quot;);</span>
+</code></pre></div>
+
+<p>Agora eu posso varrer todas as linhas do arquivo assim, usando o foreach ou o for. Neste caso o for é mais adequado:</p>
+<div class="highlight"><pre><span></span><code><span class="x">$c = count($linhas);</span>
+<span class="x">for($x = 0;$x &lt; $c;$x++){</span>
+<span class="x">    print $linhas[$x] . &#39;&lt;br&gt;&#39;;</span>
+<span class="x">}</span>
+</code></pre></div>
+
+<p>Assim ele imprimirá cada linha do arquivo texto em uma linha na tela e então poderei pensar em como criar um arquivo .sql pela menipulação de strings do PHP.</p>
+<p>Depois de muitas tentativas, veja abaixo o código que me trouxe a solução:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$linhas</span> <span class="o">=</span> <span class="nb">file</span><span class="p">(</span><span class="s2">&quot;elias.txt&quot;</span><span class="p">);</span>
+<span class="nv">$c</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$linhas</span><span class="p">);</span>
+
+<span class="nv">$values</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+<span class="k">for</span><span class="p">(</span><span class="nv">$x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="nv">$x</span> <span class="o">&lt;</span> <span class="nv">$c</span><span class="p">;</span><span class="nv">$x</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$x</span> <span class="o">&lt;</span> <span class="mi">507</span><span class="p">)</span> <span class="p">{</span>        
+        <span class="nv">$login</span> <span class="o">=</span> <span class="nv">$linhas</span><span class="p">[</span><span class="nv">$x</span><span class="p">];</span>
+        <span class="nv">$senha</span> <span class="o">=</span> <span class="nv">$linhas</span><span class="p">[</span><span class="nv">$x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+        <span class="nv">$x</span> <span class="o">=</span> <span class="nv">$x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$values</span> <span class="o">.=</span><span class="s2">&quot;(&#39;</span><span class="si">$login</span><span class="s2">&#39;, &#39;</span><span class="si">$senha</span><span class="s2">&#39;),&lt;br&gt;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">print</span> <span class="nv">$values</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Ao executar me mostra tudo assim:</p>
+<div class="highlight"><pre><span></span><code><span class="x">(&#39;Banana prata &#39;, &#39;3.15 &#39;),</span>
+<span class="x">(&#39;Manga rosa &#39;, &#39;2.85 &#39;),</span>
+<span class="x">(&#39;Banana prata &#39;, &#39;3.00 &#39;),</span>
+<span class="x">...</span>
+</code></pre></div>
+
+<p>Veja que existe um espaço em branco ao final de cada campo.</p>
+<p>Então copio tudo e salvo em um arquivo do meu editor de texto/código preferido (Xed) e teclo Ctrl+H (isso também funciona inclusive no Bloco de notas no Windows).</p>
+<p>Na caixa de cima digito um espaço em branco e o apóstrofo:
+ '</p>
+<p>Na de baixo digito apenas o apóstrofo
+'</p>
+<p>Então removo os espaços indesejados.</p>
+<div class="highlight"><pre><span></span><code><span class="x">(&#39;Banana prata&#39;, &#39;3.15&#39;),</span>
+<span class="x">(&#39;Manga rosa&#39;, &#39;2.85&#39;),</span>
+<span class="x">(&#39;Banana prata&#39;, &#39;3.00&#39;),</span>
+<span class="x">...</span>
+</code></pre></div>
+
+<p>Agora crio o início do arquivo:</p>
+<div class="highlight"><pre><span></span><code><span class="x">INSERT INTO produtos (descricao, preco) VALUES</span>
+<span class="x">(&#39;Banana prata&#39;, &#39;3.15&#39;),</span>
+<span class="x">(&#39;Manga rosa&#39;, &#39;2.85&#39;),</span>
+<span class="x">(&#39;Banana prata&#39;, &#39;3.00&#39;),</span>
+<span class="x">...</span>
+</code></pre></div>
+
+<p>Ao final troco a vírgula pelo ;</p>
+<p>E o resultado já pode ser executado para adicionar os registros ao banco.</p>
+<p>A criação do CRUD em si ou de um aplicativo é importante, mas geralmente é um código que já conhecemos, depois de ter criado algumas vezes, mesmo que geralmente apareçam problemas. Já este tipo de código geralmente não temos solução pronta e requer conhecimento, raciocínio lógico e empenho. Além de me ajudar a exercitar meus conhecimentos ele resolve um grande problema do cliente. Veja que praticamente não usamos conhecimento de matemática. O quente mesmo foi raciocinar com lógica para entender e resolver o problema. Isso dignifica a programação. Acho que é para isso que ela serve, para facilitar a vida das pessoas, mesmo que para isso precise de alguém que se empenhará para encontrar a solução: eu ou você.</p>
+<p>Numa tentativa deixei os campos se duplicarem e a quantidade de registros gerada foi de 508. Então adicionei o $x = $x + 3; para corrigir. Desta vez reduzi os registros e somente quando ajustei para $x = $x + 1 ficou redondo. </p>
+<p>Se analisar com calma, verá que realmente precisamos usar cada linha, que tem a metade de um registro. Então pego o x da primeira linha, junto com o x da segunda e pulo uma linha. Isso é feito com $x = $x + 1, que avisa ao for que o valor do x foi incrementado. Geralmente se usa $x++; mas prefiro como está que fica mais claro.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

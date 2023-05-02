@@ -1,0 +1,614 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/trabalho/programador_habilidades/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Habilidades de um programador - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../prog/site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/trabalho/programador_habilidades.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#habilidades-de-programador-voce-sabe-quais-ja-possui" class="nav-link">Habilidades de programador: você sabe quais já possui?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="habilidades-de-programador-voce-sabe-quais-ja-possui">Habilidades de programador: você sabe quais já possui?</h2>
+<p>Você não sabia, mas já tem habilidades de um programador! Conheça as soft skills e hard skills que fazem de você estar preparado para a área tech.</p>
+<p>Mais que capacidade técnica, é preciso ter competências comportamentais para ser um bom profissional nessa área.</p>
+<p>Enquanto há uma fila de pessoas na busca de um emprego, há uma outra de vagas em aberto na área de TI. Com a baixa oferta de profissionais qualificados, os salários oferecidos sobem, atraindo os olhares de profissionais de outras áreas considerando reconstruir sua trajetória profissional.</p>
+<h3 id="quais-as-habilidades-comportamentais-ou-soft-skills-de-um-desenvolvedor">Quais as habilidades comportamentais, ou soft skills de um desenvolvedor?</h3>
+<p>Primeiro, vamos separar as tais habilidades em duas categorias: as comportamentais e as técnicas. Considerando que as técnicas são possíveis de adquirir em um curso de formação, as comportamentais é bem provável que você já tenha aprimorado ao longo da sua vida profissional. E as principais para a profissão na área de tecnologia são:</p>
+<p>🔻Bom relacionamento interpessoal para o trabalho em equipe
+🔻Boa comunicação, ou seja, saber se comunicar com clareza e assertividade
+🔻Ser proativo
+🔻Ser resiliente e flexível
+🔻Organização
+🔻Capacidade analítica e de resolução de problemas</p>
+<p>Na lista acima, nos referimos às soft skills, ou seja, as comportamentais. Elas são pertinentes para qualquer área, seja você um #publicitário, #designer ou mesmo um educador físico que está pensando em migrar para a área de tecnologia. O profissional de programação precisa saber lidar com pessoas, liderar projetos, mediar conflitos, dentre outros desafios.</p>
+<p>Independentemente do tamanho do projeto, o fato é que o programador não trabalha sozinho. Ele precisa trocar informações o tempo todo com seus pares, com superiores e colegas de outras áreas. Saber trabalhar em equipe, colaboração e flexibilidade são habilidades conjuntas importantíssimas para o programador, do júnior ao pleno.</p>
+<p>Outras habilidades não técnicas, que são importantes para um programador e que um profissional de outras áreas pode já ter desenvolvido em sua trajetória profissional anterior, são: </p>
+<p>🔻Dominar a língua inglesa
+O inglês é essencial para qualquer programador, já que quase tudo o que o profissional precisa fazer demanda algum conhecimento básico do idioma. A maioria dos livros e tutoriais sobre programação está em inglês, além dos termos técnicos e dos comandos dos códigos.</p>
+<p>🔻Saber gerenciar projetos</p>
+<p>Conforme o programador sobe de nível, é comum assumir novas responsabilidades. A gestão de projetos tem foco na entrega do produto, mas também no bom andamento das atividades dentre as pessoas da equipe.</p>
+<p>Para desenvolver essa competência, é importante ter uma boa organização de suas tarefas. Muitas vezes, o profissional tem que gerenciar mais de um projeto ao mesmo tempo.</p>
+<p>🔻Ter capacidade analítica
+Um programador precisa saber analisar um problema, seu contexto e ao mesmo tempo considerar as necessidades do usuário para desenvolver as melhores soluções. Ele deve ser capaz de observar e esmiuçar uma situação para, depois, transformá-la em códigos e comandos. </p>
+<h3 id="quais-as-habilidades-tecnicas-ou-hard-skills-que-um-desenvolvedor-precisa-ter">Quais as habilidades técnicas, ou hard skills que um desenvolvedor precisa ter?</h3>
+<p>“A gente sabe que a graduação tem um grande peso em outras áreas de trabalho. Em tecnologia percebemos que, embora a graduação tenha sua importância, é possível entrar no mercado de trabalho tendo cursos profissionalizantes, com um bom conhecimento técnico. O que costumamos avaliar em processos seletivos são os projetos que a pessoa candidata já fez, suas atividades desenvolvidas, seu Github. Ter um portfólio atualizado com seus projetos é muito importante para conseguir ingressar no mercado de trabalho, diz Letícia.</p>
+<p>Das principais habilidades técnicas a serem desenvolvidas, destacamos: </p>
+<p>🔻Lógica de programação</p>
+<p>Dominar as regras e conceitos da lógica computacional irá otimizar o uso dos códigos criados pelo programador.</p>
+<p>🔻Arquitetura de sistemas</p>
+<p>É essencial conhecer as oportunidades e limitações que a arquitetura escolhida oferece. Essa competência garante que os processos e as soluções tecnológicas atenderão às necessidades da empresa</p>
+<p>🔻Dominar mais de uma linguagem</p>
+<p>Sabendo mais de uma linguagem e com a experiência, você saberá qual das linguagens atendem melhor o tipo de aplicação que a empresa (ou cliente) deseja construir. Cada linguagem favorece ou desfavorece um conjunto de requisitos para resolver um problema (ou necessidade da empresa).</p>
+<p>🔻Como desenvolver as habilidades de programador?</p>
+<p>Investir em cursos on-line facilita a rotina, principalmente por democratizar o acesso à educação via internet. É também uma opção bem aceita pelo mercado. Quase metade (43,8%) dos alunos agora fazem seus cursos on-line, segundo dados do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep).</p>
+<p>Existem vários benefícios importantes para o aprendizado virtual, como maior flexibilidade e custos mais baixos. Porém, existem alguns modelos de educação on-line:</p>
+<p>🔻Cursos online “on demand”</p>
+<p>São aqueles em que você tem todas as aulas já pré-gravadas e pode acessá-las no horário que quiser. Geralmente, com esse modelo, você tem um período para consumir todo o conteúdo e, ao final desse tempo, uma prova para testar o que absorveu.</p>
+<p>🔻Cursos online “ao vivo”</p>
+<p>Seria o típico modelo EAD (Ensino a Distância). Você não precisa se deslocar até a escola ou universidade mas, como no modelo convencional, você tem um horário certo para logar na internet e assistir o professor ensinar, em tempo real.</p>
+<p>🔻Cursos online híbridos</p>
+<p>Muitas instituições de ensino também oferecem modelos híbridos, em que você tem uma parte das aulas on demand e uma parte delas (ou então seminários extra) ao vivo. 
+De modo geral, ao investir em cursos, você passa a ter uma base mais sólida de conhecimentos e as portas começam a se abrir, às vezes, na empresa em que já trabalha.</p>
+<h3 id="colaboracao-do-colega-matondo-joao">Colaboração do colega Matondo João</h3></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

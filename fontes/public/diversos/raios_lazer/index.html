@@ -1,0 +1,601 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/diversos/raios_lazer/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Raios Lazar - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../prog/site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trabalho/contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/diversos/raios_lazer.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#o-raio-laser" class="nav-link">O RAIO LASER</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="o-raio-laser">O RAIO LASER</h2>
+<div class="highlight"><pre><span></span><code> <span class="nv">Teoricamente</span>, <span class="nv">o</span> <span class="nv">raio</span> <span class="nv">laser</span> é <span class="nv">uma</span> <span class="nv">coisa</span> <span class="nv">simples</span>. <span class="nv">A</span> <span class="nv">palavra</span> é <span class="nv">formada</span> <span class="nv">pelas</span> <span class="nv">iniciais</span> <span class="nv">de</span> <span class="s2">&quot;</span><span class="s">Light Amplification by Stimulated Emission of Radiation</span><span class="s2">&quot;</span>. <span class="nv">Ou</span> <span class="nv">seja</span>: <span class="nv">trata</span><span class="o">-</span><span class="nv">se</span> <span class="nv">de</span> <span class="nv">um</span> <span class="nv">fino</span> <span class="nv">e</span> <span class="nv">intenso</span> <span class="nv">feixe</span> <span class="nv">de</span> <span class="nv">raios</span> <span class="nv">luminosos</span>, <span class="nv">de</span> <span class="nv">luz</span> <span class="nv">coerente</span>.
+   <span class="nv">Na</span> <span class="nv">luz</span> <span class="nv">comum</span>, <span class="nv">como</span> <span class="nv">aquela</span> <span class="nv">emitida</span> <span class="nv">por</span> <span class="nv">uma</span> <span class="nv">lanterna</span>, <span class="nv">a</span> <span class="nv">radia</span>çã<span class="nv">o</span> <span class="nv">luminosa</span> é <span class="nv">formada</span> <span class="nv">por</span> <span class="nv">uma</span> <span class="nv">mistura</span> <span class="nv">de</span> <span class="nv">ondas</span> <span class="nv">diferentes</span>, <span class="nv">que</span> <span class="nv">avan</span>ç<span class="nv">am</span> <span class="nv">sem</span> <span class="nv">ordem</span>. <span class="nv">E</span>, à <span class="nv">medida</span> <span class="nv">que</span> <span class="nv">avan</span>ç<span class="nv">am</span>, <span class="nv">chocam</span><span class="o">-</span><span class="nv">se</span> <span class="nv">umas</span> <span class="nv">contra</span> <span class="nv">as</span> <span class="nv">outras</span> <span class="nv">e</span> <span class="nv">v</span>ã<span class="nv">o</span> <span class="nv">perdendo</span> <span class="nv">for</span>ç<span class="nv">a</span> <span class="nv">e</span> <span class="nv">dire</span>çã<span class="nv">o</span>. <span class="nv">Por</span> <span class="nv">isso</span>, <span class="nv">o</span> <span class="nv">feixe</span> <span class="nv">luminoso</span> <span class="nv">de</span> <span class="nv">uma</span> <span class="nv">lanterna</span> <span class="nv">el</span>é<span class="nv">trica</span> <span class="nv">perde</span> <span class="nv">for</span>ç<span class="nv">a</span> <span class="nv">e</span> <span class="nv">se</span> <span class="nv">espalha</span> <span class="nv">em</span> <span class="nv">leque</span>. <span class="nv">No</span> <span class="nv">feixe</span> <span class="nv">luminoso</span> <span class="nv">que</span> <span class="nv">sai</span> <span class="nv">de</span> <span class="nv">um</span> <span class="nv">gerador</span> <span class="nv">laser</span> <span class="nv">existe</span> <span class="nv">apenas</span> <span class="nv">um</span> <span class="nv">tipo</span> <span class="nv">de</span> <span class="nv">onda</span>, <span class="nv">chamada</span> <span class="nv">de</span> <span class="nv">coerente</span> <span class="nv">por</span> <span class="nv">esse</span> <span class="nv">motivo</span> <span class="o">-</span> <span class="nv">que</span> <span class="nv">avan</span>ç<span class="nv">a</span> <span class="nv">concentrada</span> <span class="nv">num</span> <span class="nv">feixe</span> <span class="nv">fino</span>, <span class="nv">sem</span> <span class="nv">se</span> <span class="nv">dispersar</span> <span class="nv">e</span> <span class="nv">alcan</span>ç<span class="nv">ando</span> <span class="nv">dist</span>â<span class="nv">ncias</span> <span class="nv">maiores</span>.
+
+   <span class="nv">Teoricamente</span> é <span class="nv">poss</span>í<span class="nv">vel</span> <span class="nv">se</span> <span class="nv">concentrar</span> <span class="nv">quanta</span> <span class="nv">energia</span> <span class="nv">se</span> <span class="nv">deseje</span> <span class="nv">num</span> <span class="nv">feixe</span> <span class="nv">desse</span> <span class="nv">tipo</span>. <span class="nv">Na</span> <span class="nv">pr</span>á<span class="nv">tica</span>, <span class="nv">tal</span> <span class="nv">emiss</span>ã<span class="nv">o</span> <span class="nv">est</span>á <span class="nv">limitada</span> à <span class="nv">resist</span>ê<span class="nv">ncia</span> <span class="k">do</span> <span class="nv">elemento</span> <span class="nv">emissor</span> <span class="ss">(</span><span class="nv">que</span> <span class="nv">pode</span> <span class="nv">at</span>é <span class="nv">fundir</span><span class="ss">)</span> <span class="nv">e</span> à <span class="nv">quantidade</span> <span class="nv">de</span> <span class="nv">energia</span> <span class="nv">dispon</span>í<span class="nv">vel</span>.
+
+   <span class="nv">No</span> <span class="nv">in</span>í<span class="nv">cio</span>, <span class="nv">os</span> <span class="nv">cientistas</span> <span class="nv">utilizavam</span> <span class="nv">rubis</span> <span class="nv">sint</span>é<span class="nv">ticos</span> <span class="nv">de</span> <span class="nv">extrema</span> <span class="nv">pureza</span> <span class="nv">para</span> <span class="nv">concentr</span>á<span class="o">-</span><span class="nv">los</span> <span class="nv">nesse</span> <span class="nv">feixe</span> <span class="nv">paralelo</span>. <span class="nv">Depois</span> <span class="nv">descobriram</span> <span class="nv">um</span> <span class="nv">resultado</span> <span class="nv">ainda</span> <span class="nv">melhor</span>, <span class="nv">obtido</span> <span class="nv">pela</span> <span class="nv">excita</span>çã<span class="nv">o</span> <span class="nv">de</span> <span class="nv">certas</span> <span class="nv">misturas</span> <span class="nv">gasosas</span>. <span class="nv">E</span> <span class="nv">hoje</span> <span class="nv">existem</span> <span class="nv">diversas</span> <span class="s2">&quot;</span><span class="s">famílias</span><span class="s2">&quot;</span> <span class="nv">de</span> <span class="nv">geradores</span> <span class="nv">laser</span>, <span class="nv">cada</span> <span class="nv">uma</span> <span class="nv">apropriada</span> <span class="nv">para</span> <span class="nv">um</span> <span class="nv">uso</span> <span class="nv">diferente</span>.
+
+   <span class="nv">Os</span> <span class="nv">de</span> <span class="nv">uso</span> <span class="nv">militar</span> <span class="nv">s</span>ã<span class="nv">o</span> <span class="nv">mais</span> <span class="nv">fortes</span> <span class="nv">e</span> <span class="nv">seu</span> <span class="nv">feixe</span> <span class="nv">luminoso</span> <span class="nv">deve</span> <span class="nv">ter</span> <span class="nv">pelo</span> <span class="nv">menos</span> <span class="mi">150</span> <span class="nv">quilowatts</span> <span class="nv">para</span> <span class="nv">destruir</span> <span class="nv">avi</span>õ<span class="nv">es</span>, <span class="nv">m</span>í<span class="nv">sseis</span> <span class="nv">e</span> <span class="nv">astronaves</span>.
+</code></pre></div>
+
+<p>E mais de 300 quilowatts para atravessar a proteção de veículos blindados (tanques de guerra e navios). Tais aparelhos laser funcionam por impulsos (flashes) como uma metralhadora, já que a energia gerada  exige um complexo sistema de refrigeração.</p>
+<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="n">Usando</span><span class="o">-</span><span class="n">se</span><span class="w"> </span><span class="n">raios</span><span class="w"> </span><span class="n">laser</span><span class="w"> </span><span class="n">mais</span><span class="w"> </span><span class="n">fracos</span><span class="p">,</span><span class="w"> </span><span class="err">é</span><span class="w"> </span><span class="n">possível</span><span class="w"> </span><span class="n">fazê</span><span class="o">-</span><span class="n">los</span><span class="w"> </span><span class="n">refletir</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="n">obstáculo</span><span class="w"> </span><span class="n">distante</span><span class="p">.</span><span class="w"> </span><span class="n">Medindo</span><span class="o">-</span><span class="n">se</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">tempo</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">raio</span><span class="w"> </span><span class="n">leva</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">ir</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">fonte</span><span class="w"> </span><span class="n">emissora</span><span class="w"> </span><span class="n">ao</span><span class="w"> </span><span class="n">alvo</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">voltar</span><span class="p">,</span><span class="w"> </span><span class="n">temos</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">telêmetro</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pontaria</span><span class="w"> </span><span class="n">incrivelmente</span><span class="w"> </span><span class="n">preciso</span><span class="p">.</span><span class="w"> </span><span class="n">Esse</span><span class="w"> </span><span class="n">sistema</span><span class="w"> </span><span class="n">se</span><span class="w"> </span><span class="n">chama</span><span class="w"> </span><span class="n">Colidar</span><span class="w"> </span><span class="p">(</span><span class="n">Coherent</span><span class="w"> </span><span class="n">Light</span><span class="w"> </span><span class="n">Detection</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">Ranging</span><span class="p">)</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">nada</span><span class="w"> </span><span class="n">mais</span><span class="w"> </span><span class="err">é</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">espécie</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">radar</span><span class="p">,</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">qual</span><span class="w"> </span><span class="n">utiliza</span><span class="w"> </span><span class="n">ondas</span><span class="w"> </span><span class="n">luminosas</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">vez</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ondas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">rádio</span><span class="p">,</span><span class="w"> </span><span class="n">como</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">radares</span><span class="w"> </span><span class="n">comuns</span><span class="p">.</span><span class="w"></span>
+
+<span class="w">   </span><span class="n">Tais</span><span class="w"> </span><span class="n">equipamentos</span><span class="w"> </span><span class="n">são</span><span class="w"> </span><span class="n">utilizados</span><span class="w"> </span><span class="n">nos</span><span class="w"> </span><span class="n">visores</span><span class="w"> </span><span class="n">militares</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pontaria</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">modernos</span><span class="w"> </span><span class="n">equipamentos</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">trigonometria</span><span class="p">,</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">ajudar</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">confeccionar</span><span class="w"> </span><span class="n">mapas</span><span class="w"> </span><span class="n">cartográficos</span><span class="p">.</span><span class="w"> </span><span class="n">Ou</span><span class="w"> </span><span class="n">até</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">medir</span><span class="w"> </span><span class="n">com</span><span class="w"> </span><span class="n">exatidão</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">distância</span><span class="w"> </span><span class="n">entre</span><span class="w"> </span><span class="n">planetas</span><span class="p">.</span><span class="w"> </span><span class="n">Nos</span><span class="w"> </span><span class="n">laboratórios</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="n">Instituto</span><span class="w"> </span><span class="n">Nacional</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Pesquisas</span><span class="w"> </span><span class="n">Espaciais</span><span class="p">,</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">São</span><span class="w"> </span><span class="n">José</span><span class="w"> </span><span class="n">dos</span><span class="w"> </span><span class="n">Campos</span><span class="p">,</span><span class="w"> </span><span class="n">há</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">laser</span><span class="w"> </span><span class="n">desse</span><span class="w"> </span><span class="n">tipo</span><span class="p">,</span><span class="w"> </span><span class="n">usado</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">refletir</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">feixe</span><span class="w"> </span><span class="n">luminoso</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">Lua</span><span class="p">.</span><span class="w"> </span><span class="n">Só</span><span class="w"> </span><span class="n">que</span><span class="p">,</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">funcionar</span><span class="p">,</span><span class="w"> </span><span class="n">ele</span><span class="w"> </span><span class="n">exige</span><span class="w"> </span><span class="n">horas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">preparação</span><span class="p">,</span><span class="w"> </span><span class="n">quando</span><span class="w"> </span><span class="n">são</span><span class="w"> </span><span class="n">carregados</span><span class="w"> </span><span class="n">seus</span><span class="w"> </span><span class="n">acumuladores</span><span class="w"> </span><span class="n">elétricos</span><span class="p">.</span><span class="w"></span>
+
+<span class="w">   </span><span class="n">Feixes</span><span class="w"> </span><span class="n">mais</span><span class="w"> </span><span class="n">fracos</span><span class="p">,</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">emissão</span><span class="w"> </span><span class="n">contínua</span><span class="p">,</span><span class="w"> </span><span class="n">são</span><span class="w"> </span><span class="n">hoje</span><span class="w"> </span><span class="n">usados</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">cortar</span><span class="w"> </span><span class="n">chapas</span><span class="w"> </span><span class="n">metálicas</span><span class="p">.</span><span class="w"> </span><span class="n">Menos</span><span class="w"> </span><span class="n">intensos</span><span class="w"> </span><span class="n">ainda</span><span class="w"> </span><span class="n">transformam</span><span class="o">-</span><span class="n">se</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">bisturis</span><span class="w"> </span><span class="n">especiais</span><span class="p">,</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">cortam</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">cauterizam</span><span class="w"> </span><span class="n">ao</span><span class="w"> </span><span class="n">mesmo</span><span class="w"> </span><span class="n">tempo</span><span class="w"> </span><span class="n">tecido</span><span class="w"> </span><span class="n">humano</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">podem</span><span class="w"> </span><span class="n">até</span><span class="w"> </span><span class="n">mesmo</span><span class="w"> </span><span class="n">soldar</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">retina</span><span class="p">,</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">delicadíssimas</span><span class="w"> </span><span class="n">cirurgias</span><span class="p">.</span><span class="w"> </span><span class="n">Finalmente</span><span class="p">,</span><span class="w"> </span><span class="n">outros</span><span class="w"> </span><span class="n">servem</span><span class="w"> </span><span class="err">à</span><span class="n">s</span><span class="w"> </span><span class="n">comunicações</span><span class="p">,</span><span class="w"> </span><span class="n">servindo</span><span class="w"> </span><span class="n">como</span><span class="w"> </span><span class="n">canais</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">milhões</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">mensagens</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">fonia</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">TV</span><span class="p">.</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="n">existem</span><span class="w"> </span><span class="n">algumas</span><span class="w"> </span><span class="n">centenas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">geradores</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">raio</span><span class="w"> </span><span class="n">laser</span><span class="w"> </span><span class="n">feitos</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">casa</span><span class="p">,</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">amadores</span><span class="p">.</span><span class="w"></span>
+
+<span class="w">   </span><span class="n">Só</span><span class="w"> </span><span class="n">resta</span><span class="w"> </span><span class="n">esperar</span><span class="w"> </span><span class="n">que</span><span class="p">,</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">futuro</span><span class="p">,</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">empregos</span><span class="w"> </span><span class="n">pacíficos</span><span class="w"> </span><span class="n">dessa</span><span class="w"> </span><span class="n">descoberta</span><span class="w"> </span><span class="n">sejam</span><span class="w"> </span><span class="n">maiores</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">seus</span><span class="w"> </span><span class="n">usos</span><span class="w"> </span><span class="n">bélicos</span><span class="p">.</span><span class="w"></span>
+
+<span class="w">                                     </span><span class="n">CONDENSADO</span><span class="w"> </span><span class="n">DE</span><span class="w"> </span><span class="s">&quot;SHOPPING NEWS&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<p>Origem</p>
+<p>Site do Aurélio Jarbas</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,154 @@
+site_name: RibaFS Blog
+site_url: https://ribafs.github.io/blog
+site_description: Blog do Ribamar FS
+site_author: Ribamar FS
+site_dir: public/
+
+repo_url: https://github.com/ribafs//blog
+
+docs_dir: sources/
+
+extra_css:
+    - assets/css/extra.css
+
+theme:
+    name: superhero #darkly
+    custom_dir: sources/overrides
+    favicon: img/favicon.ico
+    highlightjs: true
+    hljs_languages:
+        - php
+        - html
+
+markdown_extensions:
+  markdown.extensions.codehilite:
+    css_class: highlight
+    pymdownx.highlight:
+      guess_lang: false
+      linenums: true    
+
+plugins:
+    - search:
+        indexing: full
+
+nav:
+    - Início: index.md
+
+    - Família:
+        - Aniversário dos 89 anos do Pai: familia/pai_89.md
+
+    - Reflexões:
+        - Matando semi deuses: reflexoes/matando_semi_deuses.md
+        - Pensamentos: reflexoes/pensamentos.md
+        - Raciocínio Lógico: reflexoes/rac_logico.md
+        - Saudosismo Inverso: reflexoes/saudosismo_inverso.pdf
+        - Viver: reflexoes/viver.md
+        - Voz: reflexoes/voz.md
+        - Teste do ChatGPT: reflexoes/chatgpt.md
+
+    - Dicas:
+        - Criar site do zero: dicas/criar_site_do_zero.md
+        - Dicas para criação de sites: dicas/dicas_site.md
+        - Recursos gratuitos: dicas/gratuitos.md
+        - Informações úteis: dicas/informacoes.md
+        - Criando forms em PDF: dicas/pdf_form.md
+
+    - Programação:
+        - HTML:
+            - Link para a mesma página: prog/html/link_mesma.html
+            - Expressões regulares: prog/html/regex.html
+            - Tags semânticas: prog/html/tags_semanticas.html
+            - Tooltips: prog/html/tooltips.html
+
+        - CSS:
+            - Link para voltar ao topo: prog/css/back-top.html
+            - Alinhar na vertical e horizontal: prog/css/center_vert_hor.html
+            - Checkbox customizado: prog/css/checkbox_custom.html
+            - Tipos de bordas: prog/css/css_borders.md
+            - Preencher a página: prog/css/fill-page.html
+            - Rodapé fixo na base: prog/css/fixed_footer.html
+            - Menu fixo no topo: prog/css/fixed_menu.html
+            - CSS para formulários: prog/css/forms.md
+            - Master CSS: prog/css/master_css.md
+
+        - Javascript:
+            - Confirmação de exclusão: prog/js/confirm_delete.md
+            - Copy & Paste: prog/js/copy_paste.md
+            - Form em etapas: prog/js/form_etapas.html
+            - Popups em JS: prog/js/popups.md
+            - Animação 3D em JS: prog/js/three.md
+
+        - UX:
+            - Princípios do US: prog/ux/principios_ux.pdf
+            - Botão grande: prog/ux/botaoGrande.html
+            - Referências: prog/ux/referencias.md
+
+        - Site prático: prog/site_pratico.md
+        - Alert Message: prog/alert_message.html
+        - API x Webservice: prog/apixwebserver.md
+        - Dicas sobre blogs: prog/blog.md
+        - Boas práticas: prog/boas_praticas.md
+        - Bons livros: prog/bons_livros.md
+        - Checklist de Lançamento: prog/checklist_lancamento.md
+        - Codando na vida real: prog/codando_real.md
+        - Computadores: prog/computadores.pdf
+        - Debugar: prog/debugar.md
+        - Erro de lógica: prog/erro_logica.md
+        - Boas práticas em HTML: prog/html30best_practices.pdf
+        - Linguagens de programação: prog/linguagensprog.jpg
+        - Matemática para programação: prog/matematica_programacao.md
+        - Importância da página inicial: prog/pagina_inicial.pdf
+        - Melhorando a performance: prog/performance.md
+        - Traduzindo um projeto do indonésio: prog/projeto-indonesio.md
+        - Recuperando o Linux do Windows: prog/recuperando_linux.md
+        - Site responsivo: prog/responsivo.md
+        - Copiar texto de vídeos: prog/selectext.md
+        - Melhorando o SEO: prog/seo.md
+        - Sites estáticos: prog/site_estatico.md
+        - Recomendações para sites: prog/sites_recomendacoes.pdf
+        - Importância da tipografia: prog/tipografia.md
+
+    - Estudo:
+        - Dicas para aprender melhor: estudo/como_aprender.md
+        - Seja mais produtivo: estudo/produtividade.md
+        - Escolas gratuitas: estudo/escolas.md
+
+    - Trabalho:
+        - Contratar e ser contratado: trabalho/contratar_sercontratado.md
+        - Exemplo de currículo: trabalho/curriculo-exemplo.md
+        - Como se Tornar um Desenvolvedor Web: trabalho/desenv_web.md
+        - Níveis de carreira: trabalho/niveis_carreira.md
+        - Dicas sobre portfolio: trabalho/portfolio.md
+        - Habilidades de um programador: trabalho/programador_habilidades.md
+        - Uma mente bem sucedida: trabalho/ser_bem_sucedido.md
+        - Talentos & cia: trabalho/talentosecia.md
+        - O que usar e o que não usar em currículo: trabalho/usar_nao_curriculo.md
+        - O que é vocação?: trabalho/vocacao.md
+
+    - Seletos:
+        - A importância de um abraço: seletos/abraco.md
+        - A importância da água: seletos/agua.html
+        - Sobre o caráter: seletos/carater.html
+        - Criatividade: seletos/criatividade.html
+        - Generosidade: seletos/generosidade.html
+        - Gratidão: seletos/gratidao.html
+        - Depressão e homens: seletos/homens_deprimidos.html
+        - Ótimas ideias: seletos/ideias_otimas.html
+        - Você sabia?: seletos/voce_sabia.md
+
+    - Diversos:
+        - Informações Científicas: diversos/info_cient.md
+        - Consegue ler?: diversos/letras_trocadas.md
+        - Numeração de casas: diversos/numeracao_casas.md
+        - Raios Lazar: diversos/raios_lazer.md
+        - Curiosidade da língua: diversos/nossa_lingua.md
+        - Inteligência artifial do ChatGPT): diversos/ia.md
+
+    - Sobre: 
+        - Contato: sobre/contato.md
+        
+#    - Comentários: comments.md
+
+#    - Mapa do site: mapa.md
+
+

@@ -1,0 +1,1005 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/trabalho/portfolio/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Dicas sobre portfolio - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../prog/site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../estudo/como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/produtividade/" class="dropdown-item">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../../estudo/escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/trabalho/portfolio.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#dicas-sobre-portfolio" class="nav-link">Dicas sobre Portfólio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="dicas-sobre-portfolio">Dicas sobre Portfólio</h2>
+<p>O que é?</p>
+<p>O portfólio é uma compilação de materiais ou trabalhos desenvolvidos por um profissional (ou empresa) que demonstra suas habilidades, competências, qualificações e experiências. Um portfólio pode ser usado para atrair clientes, fechar negócios, candidatar a empregos e outros fins acadêmicos. (Mateus Pimenta)</p>
+<p>Depois de ter se esforçado tanto para dominar sua área de atuação, agora é preciso divulgar seus serviços e causar uma ótima impressão para conseguir bons clientes, e é aí que entra o portfólio.</p>
+<p>Aajuda não só na divulgação, mas também na valorização do seu trabalho.</p>
+<p>Devemos conhecer alguns conceitos de design que devem ser aplicados em sua montagem, de forma que ele realmente encante seu potencial cliente.</p>
+<p>O portfólio tem um objetivo diferente do currículo. No caso desse segundo, você o usa para se apresentar e ajudar uma empresa a conhecer seu perfil profissional. Já o portfólio, por outro lado, é uma coleção de amostras de trabalhos que você já realizou.</p>
+<p>Além de explicar o que é um portfólio, vamos te mostrar como criar um excelente portfólio:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="kd">Def</span><span class="n">ina</span><span class="w"> </span><span class="n">seu</span><span class="w"> </span><span class="n">objetivo</span><span class="w"> </span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Escolha</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">seus</span><span class="w"> </span><span class="n">principais</span><span class="w"> </span><span class="n">trabalhos</span><span class="w"> </span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">O</span><span class="w"> </span><span class="n">portfólio</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">quem</span><span class="w"> </span><span class="n">nunca</span><span class="w"> </span><span class="n">trabalhou</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">área</span><span class="w"> </span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">Apresente</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">pessoa</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">está</span><span class="w"> </span><span class="n">por</span><span class="w"> </span><span class="n">trás</span><span class="w"> </span><span class="n">dos</span><span class="w"> </span><span class="n">projetos</span><span class="w"> </span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">Aposte</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">simplicidade</span><span class="w"> </span>
+<span class="mf">6.</span><span class="w"> </span><span class="n">Facilite</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">leitura</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">navegação</span>
+</code></pre></div>
+
+<p>No caso de um fotógrafo, por exemplo, o portfólio será composto por fotos que foram tiradas em vários de seus trabalhos. Quanto ao de um redator, terá uma coleção de textos que ele já escreveu. Um designer, por outro lado, poderá apresentar artes que já tenha criado.</p>
+<ol>
+<li>Defina seu objetivo</li>
+</ol>
+<p>Tenha em mente qual é o objetivo do seu portfólio. Será que ele servirá para ajudar você a conseguir mais jobs de redação? Ou seu interesse é conseguir um emprego em uma agência de publicidade? Ou você é um estudante e quer registrar seu progresso a fim de avaliar seu desenvolvimento de tempos em tempos?
+Se você tem uma loja, talvez queira fazer um portfólio para divulgar seus produtos. Caso trabalhe com fotografia, certamente quer apresentar amostras de fotos tiradas em casamentos, formaturas e outros eventos.
+Assim, tenha em mente qual é o objetivo do seu portfólio, já que isso vai guiar você nas próximas etapas.</p>
+<ol>
+<li>Escolha os seus principais trabalhos</li>
+</ol>
+<p>O portfólio não deve parecer um diário, contendo inúmeras informações e fotos de todos os trabalhos que você já fez. É claro que, se você começou há pouco tempo, certamente terá poucos trabalhos para apresentar. Mas, se não for esse o caso, selecione os projetos dos quais você mais se orgulha.
+Talvez você saiba que, no caso de um currículo, existe um princípio semelhante. Da mesma forma que recrutadores não estão interessados em toda e qualquer informação sobre você — e eles nem têm tempo para isso —, um portfólio deve ser objetivo em mostrar para seu potencial cliente o que você é capaz de fazer.
+Por isso, um fotógrafo ou um arquiteto, por exemplo, devem separar as melhores fotos de seus principais projetos e incluí-las no portfólio.</p>
+<ol>
+<li>O portfólio de quem nunca trabalhou na área</li>
+</ol>
+<p>Se você acabou de terminar os estudos ou está mudando sua área de atuação, talvez ache que não tem nada para incluir no seu portfólio, mas não é bem assim.
+Veja o que você pode colocar no seu portfólio:
+    • trabalhos de faculdade;
+    • projetos pessoais;
+    • serviços feitos para conhecidos, mesmo que você não tenha cobrado.
+Entre as opções apresentadas, projetos pessoais têm a vantagem de dependerem só de você. Assim, você pode desenvolver seus próprios trabalhos e incluí-los no portfólio.</p>
+<ol>
+<li>Apresente a pessoa que está por trás dos projetos</li>
+</ol>
+<p>É claro que, para um recrutador ou um potencial cliente, verificar a qualidade do seu trabalho é muito importante. Acontece que a pessoa que está por trás daqueles projetos — no caso, você — ocupa um papel fundamental na negociação. Afinal, quem será contratado: você ou o seu portfólio?
+Por isso, na montagem do seu portfólio, é bom criar uma sessão para se apresentar. Ela pode se chamar, por exemplo, “Sobre mim”, e conter informações sobre seu contexto profissional e suas qualificações.
+Nessa página, você pode contar sobre como começou a trabalhar na área, incluir uma foto bem bonita do seu rosto e apresentar depoimentos de clientes. Essa é uma maneira de colocar o portfólio para andar de mãos dadas com o seu marketing pessoal.
+Já que o leitor dessa página está considerando a possibilidade de contratar você, aproveite para inserir um CTA no fim do texto, incentivando o potencial cliente a contratar os seus serviços.</p>
+<ol>
+<li>Aposte na simplicidade</li>
+</ol>
+<p>Esse princípio se aplica tanto aos portfólios baseados em imagens quanto aos baseados em textos. No primeiro caso, deixar de lado a simplicidade pode resultar em um material poluído e feio, fazendo com que o potencial cliente não se agrade em olhá-lo.
+No caso dos portfólios baseados em textos, pense no seguinte: ao pesquisar no Google, você provavelmente passa os olhos pela tela em busca de algum resultado que atenda às suas necessidades. Depois de encontrar o que precisa, você acessa a página e começa a ler o conteúdo.
+Mas o que você faz ao perceber que o texto não é objetivo e fica dando voltas em vez de esclarecer logo o assunto? A maioria dos usuários fecha a página e continua procurando no Google. Você não quer que o recrutador ou o potencial cliente feche seu portfólio sem analisá-lo, não é mesmo?
+Por isso, seja objetivo, levando em conta:
+    • a escolha das palavras — não tente usar palavras difíceis. Um dos segredos da boa comunicação escrita é o uso de palavras simples;
+    • a construção das ideias — não escreva frases que demandam um alto nível de concentração. Evite frases e parágrafos grandes, bem como inversões, intercalações e encadeamentos complexos de ideias.</p>
+<ol>
+<li>Facilite a leitura e a navegação</li>
+</ol>
+<p>Além de produzir um texto claro e objetivo, há outros fatores que influenciam a leitura do material, e um deles é a fonte — ou o tipo de letra. Nesse momento, talvez você se sinta tentado a deixar de lado as fontes tradicionais, como Arial e Times New Roman, a fim de usar uma fonte bem bonitinha e desenhada.
+O problema é que isso pode causar estranheza, parecer extravagante e prejudicar a leitura e a compreensão. Por isso, escolha uma fonte bem sóbria e facilite ao máximo a tarefa de quem está avaliando o seu trabalho.
+Para facilitar a navegação, imagine seu portfólio como um guarda-roupa. Esse móvel tem várias portas e gavetas, e todas as suas roupas e outros itens estão organizados de alguma forma que faça sentido.
+De modo similar, crie categorias na página principal a fim de que o visitante navegue sem ter dificuldades para encontrar o que precisa. Isso significa que seu portfólio terá um modelo de navegação parecido com o de um website comum.
+De modo similar, crie categorias na página principal a fim de que o visitante navegue sem ter dificuldades para encontrar o que precisa. Isso significa que seu portfólio terá um modelo de navegação parecido com o de um website comum.</p>
+<h3 id="3-dicas-de-design-para-o-seu-portfolio">3 dicas de design para o seu portfólio</h3>
+<p>Mesmo que você não seja um profissional do design, é importante ter algumas noções da área, de modo que seu portfólio seja de bom gosto. Por isso, fique ligado nas dicas que separamos!</p>
+<ol>
+<li>Criação da capa</li>
+</ol>
+<p>Essa questão se aplica aos portfólios impressos e também aos digitais em PDF. Entretanto, o princípio também pode ser levado em conta ao criar a página inicial do seu portfólio online.
+A não ser que você seja da área do design, não é preciso se preocupar tanto em fazer uma superprodução na capa. Por isso, use um layout simples e coloque seu nome e contatos, como email e telefone.</p>
+<ol>
+<li>Qualidade das fotos</li>
+</ol>
+<p>Leve em conta que seu portfólio será visualizado em diversos dispositivos, como notebook, desktop, celular ou tablet, e é importante que a visualização das fotos fique boa em qualquer um deles. Por isso, dê preferência a imagens com boa resolução.</p>
+<p>Entretanto, não esqueça que, geralmente, quanto maior é a qualidade de uma foto, maior é o tamanho do arquivo, o que pode resultar em maior tempo de carregamento do portfólio online. Por isso, é importante encontrar um equilíbrio, de forma que a experiência do seu potencial cliente não seja prejudicada na hora do carregamento do site.</p>
+<ol>
+<li>Cores</li>
+</ol>
+<p>Para escolher as cores que serão usadas no portfólio, é necessário ter, além de bom gosto, uma noção de como combiná-las. Para quem não é um expert do design, isso pode acabar se tornando uma tarefa difícil. Ainda bem que algumas ferramentas estão aí para nos ajudar!</p>
+<p>Com a Palettable, você é guiado por um rápido e simples processo de definição de uma paleta de cores. Mas, se você quiser criar uma paleta que combine perfeitamente com uma foto que você já tem, a melhor opção é a Colorfavs. Nessa plataforma de funcionamento bem intuitivo, você faz o upload de uma imagem e descobre qual paleta de cores vai combinar melhor com ela.
+Assim que você define a paleta, fica muito mais fácil aplicar as cores corretas nos elementos do seu portfólio.</p>
+<h3 id="para-empresas">Para empresas</h3>
+<p>Essa categoria tem algumas características que outras também têm. Por exemplo, é preciso apresentar os serviços e produtos da sua empresa, assim como acontece no portfólio de produtos. E, assim como em um portfólio profissional, deve-se informar os dados de contato, como email e telefone.</p>
+<p>Um portfólio para empresa também deve apresentar a missão, a visão e os valores dela, bem como um breve histórico do negócio. Também vale a pena mencionar alguns clientes mais importantes.</p>
+<p>Além disso, é válido incluir fotos da equipe e uma espécie de minicurrículo de alguns dos colaboradores, a fim de comprovar a capacidade de sua empresa para atender às necessidades do cliente.</p>
+<p>Ter um portfólio da sua empresa impresso e em suas mãos durante uma reunião pode ajudar o cliente a tomar uma decisão imediata e contratar logo os seus serviços. No caso do portfólio online, é uma ótima ferramenta para fechar negócios com clientes distantes.</p>
+<h3 id="como-divulgar-seu-portfolio">Como divulgar seu portfólio</h3>
+<p>Se você vai apresentar seu portfólio a um recrutador para concorrer a uma vaga que tenha sido anunciada, não tem segredo: é só comparecer no local e no horário marcados e fazer uma boa entrevista. Do contrário, é preciso fazer uma boa divulgação.</p>
+<p>É claro que você pode percorrer seu bairro ou sua cidade para procurar boas oportunidades de negócios. Nesse caso, tenha consigo o seu portfólio e alguns cartões de visita. Entretanto, vale a pena explorar todo o potencial das redes sociais e, para fazer isso, você precisa ter em mente em qual rede seu potencial cliente ou parceiro está.</p>
+<h3 id="linkedin">LinkedIn</h3>
+<p>O LinkedIn, por exemplo, é uma rede profissional que oferece a oportunidade de criar conexões com pessoas que podem se tornar clientes ou parceiros. Acontece que não basta criar seu perfil, enviar diversas solicitações de conexão e começar a mostrar seu portfólio.</p>
+<p>Você precisa ter uma boa noção de como se apresentar na rede e se tornar referência em sua área. O Kit de Marketing Pessoal no LinkedIn, por exemplo, ensina como configurar o perfil de forma otimizada e produzir conteúdo com a intenção de construir autoridade.</p>
+<h3 id="facebook">Facebook</h3>
+<p>Mas é claro que o Facebook também pode ser útil na sua divulgação. Você pode, por exemplo, pedir que seus amigos e familiares ajudem compartilhando seu portfólio.
+Além disso, se você criar uma página para o seu negócio, existe a opção de impulsionar publicações e direcioná-las a pessoas que tenham certo perfil determinado por você.</p>
+<h3 id="blog">Blog</h3>
+<p>Você pode ter um blog, em vez de apenas um portfólio online. Já falamos neste guia sobre como vale a pena para os redatores terem seu próprio blog. Entretanto, o marketing de conteúdo é uma ferramenta muito poderosa para profissionais de praticamente qualquer área.</p>
+<p>Uma estratégia de marketing de conteúdo envolve, basicamente, atrair pessoas por meio de conteúdo relevante. A intenção é produzir material de qualidade, de forma que potenciais clientes encontrem você a partir de alguma pesquisa feita no Google.</p>
+<p>Em uma estratégia bem estruturada, essas pessoas entram em um funil de vendas. Isso significa que, depois de serem atraídas, desenvolvem um relacionamento de confiança com você à medida que resolvem problemas com a ajuda do seu conteúdo.</p>
+<p>Depois de algum tempo, entram em contato com seu portfólio, passam a considerar a possibilidade de contratar você, até que tomam a decisão de adquirir seu produto ou serviço.
+Após a leitura deste guia especial, você certamente já entendeu o que é um portfólio e como a qualidade dele pode contribuir muito para a valorização do seu produto ou serviço. Se fizer uma boa divulgação, você vai encontrar boas oportunidades que o ajudarão a crescer em sua carreira. Então, o que acha de começar a montar seu portfólio hoje mesmo?</p>
+<p>O importante é sempre planejar seus objetivos de forma clara!
+<a href="https://rockcontent.com/br/talent-blog/o-que-e-portfolio/">https://rockcontent.com/br/talent-blog/o-que-e-portfolio/</a></p>
+<p>Além de sites de emprego e redes sociais como o LinkedIn, há várias outras maneiras de tirar proveito da internet na hora de conquistar um novo cargo e uma delas é fazendo o seu portfólio online. Felizmente, há várias ferramentas online para ajudam a fazer isso sem ter que ficar dias desenvolvendo um layout, programando cada menu e pensando em uma maneira de expor todos os seus vídeos, fotos, trabalhos de design e textos de forma atraente.
+A web está cheia de plataformas gratuitas para expor seus trabalhos e fazer novos contatos profissionais. Quer se candidatar a uma vaga e está desesperado porque não tem um portfolio para mostrar? Fizemos uma lista com as melhores plataformas para você fazer seu portfólio hoje. Agora você só tem que se preocupar em escolher o que tem de melhor para expor!</p>
+<p><a href="https://canaltech.com.br/carreira/7-ferramentas-para-criar-seu-portfolio-online/">https://canaltech.com.br/carreira/7-ferramentas-para-criar-seu-portfolio-online/</a></p>
+<p>Como um empreendedor de sucesso, você precisa ter metas certeiras.</p>
+<p>Definir o objetivo do portfólio é uma decisão crucial e a base de toda a sua produção que virá a seguir.</p>
+<p>É esse objetivo que irá guiar o desenho, a organização e a informação que será selecionada e incluída no portfólio. Além de, por óbvio, definir qual será a utilização desse mesmo portfólio.</p>
+<p>Esse objetivo deve ser claramente definido, explicitado e frequentemente revisado. Você precisa ter sempre em mente o que quer com o seu portfólio.</p>
+<p>Carregar essa certeza com você facilita na hora de passá-la adiante.</p>
+<p>O objetivo de um portfólio é se fazer presente no mercado, podendo inclusive ajudar você a conquistar uma vaga em específico.</p>
+<p>Como são várias as categorias de portfólio, também são vários os objetivos que se pode ter com ele.</p>
+<p>Pode ser que o objetivo do seu portfólio seja documentar a sua progressão escolar, ou pode ser que ele sirva para catalogar os produtos disponíveis para venda na sua loja.</p>
+<p>Já parou para analisar seu objetivo com calma?</p>
+<p>Saber com precisão o que você quer é o primeiro passo para que você consiga chegar lá.</p>
+<p>Isso não é segredo algum e, na verdade, é bastante claro.</p>
+<p>Aposto que dentro de você já existe essa inclinação de saber com certeza o que quer.</p>
+<p>Tente pensar nisso de maneira objetiva: qual o meu objetivo para esse portfólio que estou prestes a fazer?</p>
+<p>Pense bem nisso e guarde a resposta com carinho. Essa pergunta guiará você para o portfólio perfeito, aquele matador, que colocará você exatamente onde você sempre quis estar.</p>
+<p>Com a possibilidade, inclusive, de ir além.</p>
+<ol>
+<li>Foque nos Principais Trabalhos Desenvolvidos</li>
+</ol>
+<p>Seu portfólio é onde você deve mostrar o que faz de melhor.</p>
+<p>Isso não quer dizer que você vai esconder peças ou negar seu passado. A questão é que você vai focar apenas no que é interessante para você ali naquele material.</p>
+<p>Se você tem muito material produzido, é bom refletir e fazer uma curadoria deles. Além de poder soar um tanto arrogante, um portfólio grande demais pode acabar sendo irritante.</p>
+<p>Mas e se você não tiver nenhuma experiência profissional, como fazer um bom portfólio?</p>
+<p>Nesse caso, você vai usar materiais criados durante a faculdade, em projetos pessoais, e até mesmo trabalhos que tenha feito para outras pessoas sem cobrar nada.</p>
+<p>Em último caso, você pode criar materiais diretamente para o portfólio. O importante é conseguir mostrar o que você consegue fazer.</p>
+<p>Ninguém dispõe de muito tempo para analisar um portfólio em específico e, em uma concorrência, agilidade é tudo.</p>
+<p>Você precisa ser sucinto e mostrar em poucas “palavras” a que veio. Seja breve e objetivo.</p>
+<p>Por isso, é bom variar e não usar muitas peças de uma mesma campanha.</p>
+<p>Para citar um exemplo bem simples, vamos dizer que você queira montar um portfólio com 15 trabalhos. Use no máximo 3 peças de cada campanha.</p>
+<p>Caso contrário, vai parecer que você só tem um assunto e só fez uma coisa na vida.</p>
+<p>Esta é uma ótima oportunidade para colocar sua carreira em perspectiva e analisar quais são os trabalhos de que mais se orgulha.</p>
+<p>Seu portfólio deve falar por você. A boa notícia é que, com essas dicas, você é quem vai decidir o que ele dirá.</p>
+<ol>
+<li>Dê os Devidos Créditos</li>
+</ol>
+<p>É importante dar crédito aos outros, reconhecendo sua contribuição aos resultados. Essa é uma maneira incrível de mostrar ao mercado o tipo de profissional que você é.</p>
+<p>Ao dar crédito, você não apenas reafirma o valor daquela contribuição individual, mas também reforça a imagem de profissional com o qual as pessoas gostam de trabalhar, pois sabem que há espaço para inovação e colaboratividade, em um ambiente onde se pode compartilhar livremente suas ideias.</p>
+<p>O potencial de confiança multiplica quando você é justo e dá créditos.</p>
+<p>Dar crédito é ser leal, e a lealdade se relaciona com integridade, gratidão e reconhecimento.</p>
+<p>São valores que todos querem ter por perto, ainda mais em um ambiente de trabalho.</p>
+<p>Em seu portfólio, dê créditos a quem ajudou você a construir todo o material que está ali.</p>
+<p>Vá além. Fale sobre essas pessoas como se elas estivessem presentes. Mostre que você é confiável e grato.</p>
+<p>Não existe melhor forma de se mostrar diante de pessoas com as quais você quer trabalhar.</p>
+<p>E para elas, certamente, esse será um poderoso diferencial.</p>
+<ol>
+<li>Organize os Trabalhos em Ordem de Importância</li>
+</ol>
+<p>A ordem de como os seus trabalhos aparecem no portfólio é crucial.</p>
+<p>Muita atenção aqui.</p>
+<p>Já falei ali mais para cima que não é indicado colocar muito material.</p>
+<p>Fica um conteúdo maçante de se ver. Imagine quantos portfólios por dia um empregador analisa quando uma vaga é aberta.</p>
+<p>Se o seu tiver muitas páginas, vai logo para o final da pilha.</p>
+<p>Por isso, antes de tudo, como já falei, coloque no máximo vinte peças.</p>
+<p>Agora, é a ordem delas que vai colocar você em posição de vantagem diante dos outros concorrentes.</p>
+<p>Vou mostrar como. A regra de ouro é começar o seu portfólio com as melhores peças – as excelentes, as que você mais acredita.</p>
+<p>Lembre que a pessoa que está analisando seu material tem outros mais para conferir. Se não encantar de cara, não terá uma segunda chance.</p>
+<p>Vá com tudo.</p>
+<p>No meio do portfólio, coloque as peças boas – aquelas que não envergonhariam você e que contam uma história interessante.</p>
+<p>Em seguida, suba um pouco o nível e coloque as muito boas.</p>
+<p>Por fim, inclua uma peça no mesmo nível daquelas melhores do começo.</p>
+<p>Isso serve para fechar seu portfólio em alto nível e firmar a ideia de que a qualidade é sempre linear.</p>
+<p>Assim, visto do começo ao fim, o portfólio segue um padrão de qualidade que o torna coeso e irresistível.</p>
+<p>Quer mais uma dica? Não use nada do que fez como favor.</p>
+<p>Aquele trabalho para o primo do vizinho, a entrega feita para quebra um galho no negócio do seu avô.</p>
+<p>Trabalhos que você fez sem tanto cuidado por não receber por eles pode te prejudicar.</p>
+<p>Esqueça isso. Foque no profissional.</p>
+<p>Peças medianas ou problemáticas nunca devem ir para o seu portfólio. Você não precisa disso jogando contra.</p>
+<p>Você só deve usar o que for contribuir para você e para o seu objetivo.</p>
+<ol>
+<li>Facilite a Leitura</li>
+</ol>
+<p>Um bom portfólio, antes de tudo, é aquele que é agradável de ver.</p>
+<p>Imagine como se você estivesse mostrando para um amigo o que você faz no trabalho. A ideia é que seja algo que desperte interesse e que seja empolgante, certo?</p>
+<p>Ninguém quer se envolver em uma conversa chata e aborrecida, por isso, entediante é tudo o que seu portfólio não pode ser.</p>
+<p>Para ajudar nesse sentido, a leitura deve ser facilitada – tanto a leitura das imagens, quanto dos textos em si.</p>
+<p>Vamos falar de uma coisa de cada vez, tudo bem?</p>
+<p>Sobre as imagens, tente deixar sempre uma com maior destaque na página e outras ao redor que “conversem” com ela.</p>
+<p>Nem preciso dizer que essa de destaque será aquela matadora, não é?</p>
+<p>Quanto ao texto presente em seu portfólio, cabe mais uma vez a regra de ser rápido e prático.</p>
+<p>O que quero dizer com isso? Que o meu conselho é que você não demore demais nos textos, evitando ao máximo a prolixidade.</p>
+<p>Opte por uma boa descrição básica abaixo de cada um dos seus trabalhos. Isso deve bastar.</p>
+<p>Caso alguma peça em especial necessite de explicação maior, faça-o, mas seja breve.</p>
+<p>Menos é mais, não esqueça disso.</p>
+<ol>
+<li>Utilize Espaços em Branco</li>
+</ol>
+<p>Todo espaço deve ser utilizado de modo a contribuir para o seu portfólio.</p>
+<p>Analise bem a maneira de distribuir seu conteúdo por ele, assim não parecerá que ficou faltando alguma coisa.</p>
+<p>Na pior das hipóteses, irá parecer que você é um profissional desleixado e não notou que faltou colocar algo ali naquela página.</p>
+<p>Sabe que isso pode acontecer, não é?</p>
+<p>Então, tenha bastante atenção e não deixe que isso aconteça com você.</p>
+<p>Note que são muitos os detalhes e aqui estou abordando absolutamente todos, para que tenha segurança de estar entregando um material da mais alta qualidade.</p>
+<p>Por isso, utilize os espaços em branco.</p>
+<p>Por fim, deixe seu portfólio falar por você. Seguindo essas regras, ele só dirá coisas boas.</p>
+<ol>
+<li>Contraste</li>
+</ol>
+<p>Cuidar da qualidade das imagens e fotos do seu portfólio é essencial.</p>
+<p>Volto a frisar: trabalhe apenas com imagens de alta qualidade.</p>
+<p>Isso ajuda a mostrar o produto e serviço, e também torna mais agradável a experiência de analisar o seu portfólio para quem está tendo esta tarefa.</p>
+<p>Contraste é um dos pontos-chave. Cuide para que o balanceamento das imagens esteja adequado.</p>
+<p>Você verá o resultado aparecer.</p>
+<ol>
+<li>Alinhamento</li>
+</ol>
+<p>Cada tipo de portfólio requer um formato especial e que valorize seu conteúdo.</p>
+<p>Não existe uma regra fixa, então, a minha dica, mais uma vez, é seguir a sua intuição e usar o que acha mais harmônico.</p>
+<p>Claro, em caso de portfólios feitos para universidades ou instituições mais rígidas, haverá uma regra clara a seguir.</p>
+<p>Não se preocupe, pois você certamente será informado dela em tempo hábil e, se não for, cobre essa informação o quanto antes.</p>
+<p>Se for uma opção somente sua, escolha o que agrada mais o olhar.</p>
+<p>Confie no seu bom gosto e na mensagem que quer passar, e tudo dará certo.</p>
+<ol>
+<li>Criando Capa de Portfólio</li>
+</ol>
+<p>A capa do portfólio é outra escolha bastante pessoal.</p>
+<p>Mais uma vez, você terá que se guiar pelas regras já impostas para o alvo do seu portfólio. Existe um padrão para ser seguido?</p>
+<p>Procure se informar para não dar bola fora e nem perder seu tempo criando um material que não está de acordo com o exigido.</p>
+<p>No entanto, se não houver regras, crie as suas.</p>
+<p>Procure seguir na capa a mesma linha de raciocínio do conteúdo do portfólio. Siga o mesmo padrão de cores e de fontes para criar um portfólio coerente do começo ao fim.</p>
+<p>Claro que vai da sua personalidade, mas tente ser discreto e básico.</p>
+<p>Lembre-se que é um material profissional e, por isso, deve ser antes de tudo, sério.</p>
+<p>Ainda que sua mensagem final seja leve, você deve se posicionar como alguém que inspire confiança e seriedade no que faz.</p>
+<p>Leve isso em consideração e sua capa, assim como seu portfólio como um todo, será um sucesso.
+https://neilpatel.com/br/blog/o-que-e-portfolio/?lang_geo=br</p>
+<h3 id="dicas-para-criar-portfolios-criativos">Dicas Para Criar Portfólios Criativos</h3>
+<p>Leve isso em consideração e sua capa, assim como seu portfólio como um todo, será um sucesso.
+Como Fazer um Portfólio Online</p>
+<p>Se você optar por um portfólio online, precisará escolher também a ferramenta onde ele será feito.</p>
+<p>Mesmo assim, você ainda vai precisar usar todas as dicas que já viu aqui para criar um portfólio chamativo que se destaque dos demais.</p>
+<p>Abaixo você vê algumas dicas de ferramentas que pode usar.</p>
+<ol>
+<li>WordPress</li>
+</ol>
+<p>O WordPress é uma ferramenta muito interessante pela liberdade que ela dá, e também por existirem diversos temas de portfólio gratuitos.</p>
+<p>Ter um site próprio com certeza faz a diferença, mostra profissionalismo e também o quanto você leva seu portfólio a sério.</p>
+<p>A desvantagem dele é que você terá gasto com hospedagem e domínio, então é importante avaliar se você conseguirá manter seu portfólio no ar.</p>
+<p>A boa notícia é que existem outras ferramentas muito boas e totalmente gratuitas.</p>
+<ol>
+<li>Behance</li>
+</ol>
+<p>Esse já é bem conhecido.</p>
+<p>É uma plataforma da Adobe onde você pode postar seus trabalhos, muito usada para portfólios.</p>
+<p>Ela é principalmente usada para portfólios de design e ilustração, mas você também encontrará trabalhos de outras profissões lá, então não tenha medo de usar o Behance, mesmo não sendo designer.</p>
+<ol>
+<li>Wix</li>
+</ol>
+<p>A ideia do Wix, assim como no WordPress, é que você crie um site para apresentar seu portfólio.</p>
+<p>Ele é bem simples de usar e você consegue criar um site de forma bem rápida e simples.</p>
+<p>Ele tem opções gratuitas e também vários recursos que facilitam a criação do site, mesmo que essa seja sua primeira vez criando um site.</p>
+<ol>
+<li>DeviantArt</li>
+</ol>
+<p>Outro site usado para imagens e fotos.</p>
+<p>Nele, cada usuário tem uma espécia de mural, onde ficarão seus trabalhos, um perfil com a sua descrição e também uma área de comentários para os outros usuários do site.</p>
+<p>Além disso, ele também oferece uma opção de loja para você oferecer seus trabalhos enquanto divulga eles.</p>
+<ol>
+<li>Cargo Collective</li>
+</ol>
+<p>Outra plataforma para criação de sites de forma simples e gratuita.</p>
+<ul>
+<li>Esse tipo de opção é interessante pela liberdade que você ganha. Com elas, consegue apresentar qualquer tipo de trabalho, sem ficar preso às formas que a ferramenta permite que você apresente o material.</li>
+<li>Dicas Para Criar Portfólios Criativos</li>
+<li>Como montar portfólios criativos?</li>
+<li>Como montar portfólios criativos?</li>
+</ul>
+<p>Criatividade chama a atenção.</p>
+<p>Agora você já sabe como elaborar um portfólio e já deve estar pensando em como vai ser o seu.</p>
+<p>É bom saber que quanto mais ele for criativo, mais destaque ele terá.</p>
+<p>Isso é exatamente o que buscamos, correto?</p>
+<p>Você pode pensar em formatos e tipografias diferentes para se destacar – contanto que elas sigam o seu estilo, é claro.</p>
+<p>De modo geral, o portfólio precisa ser mais criativo do que o trabalho contido nele em si.</p>
+<p>Como tempo é dinheiro e ninguém pode desperdiçá-lo, é preciso que seu portfólio aguce a curiosidade e cative já de cara.</p>
+<p>Assim, o desafio é apresentar de maneira resumida e bastante atrativa o seu trabalho e sua experiência.</p>
+<p>Então, não é exagero dizer que conquistar aquele projeto ou colocação que você tanto sonha depende muito do poder do seu portfólio.</p>
+<p>Bem produzido, ele colocará você aonde quer chegar.</p>
+<p>E aí entra a questão que você deve estar se perguntando: “como montar um portfólio criativo?”.</p>
+<p>Existe um jeito certo para chamar a atenção de quem está analisando seu trabalho?</p>
+<p>São muitas questões! Vou responder algumas delas a seguir.</p>
+<p>Não existe uma fórmula mágica, embora as muitas dicas que eu trouxe aqui ajudem bastante.</p>
+<p>Na hora de analisarem o seu portfólio, o que mais vai contar (com toda a certeza) é a organização e a visibilidade das peças, e se esse conjunto apresentado é claro e coeso.</p>
+<p>Você tem que saber vender seu trabalho, e isso envolve ser extremamente atento a ele.</p>
+<p>Algo que conta muitos pontos também é sempre renovar seu portfólio. Ele é um trabalho em progresso e constante renovação, não se esqueça disso.</p>
+<p>Deixe seu portfólio sempre novinho em folha com novas ideias que tiver, novos trabalhos que fizer, e até com releituras melhoradas de trabalhos antigos.</p>
+<p>Isso fará seu trabalho soar sempre fresquinho e moderno, mantendo você sempre em destaque.</p>
+<h3 id="formas-eficientes-de-divulgar-o-seu-portfolio">Formas Eficientes de Divulgar o Seu Portfólio</h3>
+<ul>
+<li>Formas Eficientes de Divulgar o Seu Portfólio</li>
+</ul>
+<p>Como divulgar o seu portfólio?</p>
+<p>Um problema comum entre aqueles que estão começando a carreira é a dificuldade em conseguir encontrar clientes.</p>
+<p>Seu trabalho está pronto, o portfólio está na mão e você está cheio de garra para começar a trabalhar. Porém, onde estão os interessados?</p>
+<p>Eles existem, basta encontrá-los.</p>
+<p>Vou mostrar aqui algumas maneiras infalíveis de divulgar seu trabalho e seu portfólio, e assim conseguir seus primeiros contratos.</p>
+<p>Vamos lá?</p>
+<p>Regra número um – aquela que não pode ser deixada de lado de jeito nenhum: seu trabalho precisa ter qualidade, você precisa ter postura profissional.</p>
+<p>Invista seu tempo e faça um portfólio do qual se orgulhe, com as dicas e exemplos que trago aqui. Se apresente como um profissional confiável e interessante.</p>
+<p>Tudo certo nesse sentido? Então podemos continuar.</p>
+<p>Uma dica muito boa é começar do pequeno. Você pode oferecer seus serviços para negócios locais. Que tal essa ideia?</p>
+<p>Fale direto com donos de pequenos negócios como mercados de bairro, escritórios e lojas. Essas empresas menores não costumam ir atrás de serviços. Elas gostam que os serviços venham até elas.</p>
+<p>Sendo um empresário novato, normalmente ele entenderá a sua situação, o que contará a seu favor na hora de fechar negócio.</p>
+<p>Escolhida a pequena empresa ou profissional para quem você vai mostrar seu portfólio, é fundamental fazer uma prévia avaliação do que pode ser feito por ela.</p>
+<p>Por exemplo, você não vai chegar sugerindo um logo novo para uma empresa que acabou de abrir, certo?</p>
+<p>Eles não precisam disso no momento. Talvez, no entanto, possam precisar de outros trabalhos de design, como arte para folhetos e redes sociais.</p>
+<p>Eles não precisam disso no momento. Talvez, no entanto, possam precisar de outros trabalhos de design, como arte para folhetos e redes sociais.</p>
+<p>Quando escolher o seu alvo, já tenha em mente que vai precisar justificar para ele a necessidade de investir em você. Vá preparado!</p>
+<p>Com seu portfólio focado nisso, fica muito mais fácil agradar.</p>
+<p>E nada agrada mais do que um trabalho convincente, feito por alguém confiante. Confiança é tudo para um profissional.</p>
+<p>Com seu portfólio finalizado, é hora de falar com o cliente.</p>
+<p>A melhor forma é pessoalmente, mas nem sempre ambas as partes têm disponibilidade.</p>
+<p>Assim, use a internet como aliada e abuse de e-mails e mensagens por ferramentas de mensagens.</p>
+<p>Telefone, dependendo do caso, já não faz tanto sentido. As pessoas costumam ignorar esse tipo de contato.</p>
+<p>Vender seu trabalho, falar com as pessoas, expor seu trabalho… tudo isso pode ser um pouco mais complicado por exigir desenvoltura na hora de se comunicar.</p>
+<p>Se você não desenvolveu essa habilidade ainda, é bom começar a treinar.</p>
+<p>Imagine colocar tudo a perder em uma reunião presencial? Isso não pode acontecer.</p>
+<p>Para garantir, não esqueça do básico: atenção com o visual e com a aparência. Você deve transmitir profissionalismo.</p>
+<p>Deixe as roupas casuais de lado, mesmo que a empresa visitada seja pertinho de casa e você ainda vá passar na mercearia depois.</p>
+<p>Seu cliente não precisa saber disso, e não é você, com seus modos, que vai contar.</p>
+<p>Para se sentir mais seguro ao se apresentar, você pode montar uma pequena apresentação de slides. Algo rápido, que não passe de cinco slides.</p>
+<p>É o suficiente para provar o seu ponto de vista, sua visão e proposta para a empresa. A apresentação de slides serve de apoio e desvia a atenção visual para o trabalho, tirando-a exclusivamente de você.</p>
+<p>Para não correr o risco de falhar por imprevistos externos, leve sempre uma versão impressa do seu trabalho. Assim, você não fica na mão caso ocorra algum problema com o computador, energia e conexões de internet, em geral.</p>
+<p>A internet é, aliás, uma das mais poderosas ferramentas de divulgação do seu trabalho, e você pode fazer tudo de casa, gastando muito pouco ou nada.</p>
+<p>Com a concorrência acirrada, é preciso estar em todos os lugares. E a internet, atualmente, é o lugar mais importante para se estar.</p>
+<p>Use as redes sociais a seu favor. Crie perfis profissionais seus ou da sua marca, e os alimente com regularidade.</p>
+<p>Você pode compartilhar conteúdos produzidos por sua empresa ou de parceiros, conseguindo um bom tráfego.</p>
+<p>Lembre-se que, estando nas redes, é preciso ter atenção em alguns detalhes.</p>
+<p>Você precisa sempre dar resposta rápida. Pedidos de orçamentos devem ser respondidos nem que seja com uma previsão de resposta.</p>
+<p>Entenda que a rede é um lugar de conversa e aproximação, ou seja, não faz sentido estar ali se você não vai colaborar para que o diálogo aconteça.</p>
+<p>Tendo tudo isso em vista, vamos repassar com mais detalhes dicas imprescindíveis sobre portfólio impresso e portfólio online para que não restem dúvidas.</p>
+<p>Tendo tudo isso em vista, vamos repassar com mais detalhes dicas imprescindíveis sobre portfólio impresso e portfólio online para que não restem dúvidas.</p>
+<h3 id="portfolio-impresso">Portfólio Impresso</h3>
+<p>Se estamos falando de tradição, um portfólio impresso é o que de mais valor existe no mercado na hora de se colocar à disposição para novos clientes.</p>
+<p>Com ele, você tem o seu trabalho literalmente nas mãos para provar do que é capaz.</p>
+<p>É a comprovação física e tátil de que você tem muito a oferecer para aquele cliente em potencial.</p>
+<p>Antes de gastar tempo e dinheiro imprimindo tudo a esmo, caso seja possível, busque a opinião de algum colega de profissão. Opiniões críticas podem ajudar, ainda mais vindas de quem entende do assunto.</p>
+<p>Se você nunca trabalhou, esse retorno é mais importante ainda.</p>
+<p>Fica mais fácil trilhar o caminho quando você conta com a experiência de quem já fez essa caminhada.</p>
+<p>Já sei o que você vai dizer: “erros podem doer quando apontados”. Mas quer um conselho? Aceite, e tenha em mente que, quando apontado a tempo de ser corrigido, o erro não pode prejudicar você, contanto que esteja aberto a se aprimorar.</p>
+<p>Sempre busque a excelência. E isso inclui o material a ser escolhido para o seu portfólio impresso.</p>
+<p>Comece com uma boa pasta. Nada de material baratinho e comum.</p>
+<p>Não precisa ser também o mais caro do mercado, basta apenas que seja possível reconhecer a qualidade já no primeiro olhar.</p>
+<p>Você pode também personalizar a sua pasta com uma capa interessante ou até mesmo interativa.</p>
+<p>Surpreender positivamente sempre é uma opção boa.</p>
+<p>O papel interno do seu portfólio impresso também deve ser de qualidade. A principal característica deve ser a resistência ao manuseio.</p>
+<p>Afinal, com sorte, ele passará por muitas mãos, e não é de bom tom que as folhas comecem a sujar ou se partir, concorda?</p>
+<p>A impressão deve ser feita em local especializado, de sua preferência. O cuidado com as cores também é importante, sobretudo se o seu trabalho for ligado a artes, design ou fotografia.</p>
+<h3 id="portfolio-online">Portfolio Online</h3>
+<p>Seu portfólio pode estar ao seu alcance, distante apenas por um clique. Pode ser acessado gratuitamente, em qualquer horário do dia, e estará atualizado quando você mais precisar.</p>
+<p>Parece maravilhoso, concorda?</p>
+<p>E é. Ter um portfólio online é exatamente assim: fácil, prático e moderno.</p>
+<p>Isso é ótimo. É uma ferramenta da qual você com certeza deve lançar mão.</p>
+<p>Ter um portfólio online imprime confiança e credibilidade ao seu trabalho, além de agregar valor à sua marca.</p>
+<p>Ele mostra com facilidade e rapidez o seu trabalho para futuros empregadores.</p>
+<p>Vai além do currículo, já que demonstra, ao invés de só falar.</p>
+<p>Vai além da carta de recomendação, pois usa a sua própria essência.</p>
+<p>Mas então, como fazer um portfólio online?</p>
+<p>Para a sua página, escolha um domínio curto, fácil de ser lembrado por todos e que combine com você.</p>
+<p>Ser divertido pode ser interessante se você tiver a liberdade para isso. Só tenha cuidado para não dar margem de cair na própria piada. Não escolha nada que vá constranger.</p>
+<p>Dê preferência às plataformas mais leves. Não dê chance de cair no pesadelo do seu portfólio demorar a abrir ou travar bem no meio daquela apresentação importante.</p>
+<p>Pode ser que você não esteja presente na hora da avaliação do seu material, então facilite o contato.</p>
+<p>Coloque suas informações de contato em lugar de destaque, facilitando a busca. Mantenha esses dados sempre atualizados também.</p>
+<p>Com essas dicas, fica bem simples começar, concorda?</p>
+<p>E é para ser assim.</p>
+<p>Um portfólio deve ser agradável à leitura e simples, facilitando a vida de quem o analisa.</p>
+<h3 id="conclusao">Conclusão</h3>
+<ul>
+<li>Um portfólio deve ser agradável à leitura e simples, facilitando a vida de quem o analisa.</li>
+<li>Exemplos de Portfólio incríveis</li>
+<li>exemplos de portfólio</li>
+<li>Exemplos de portfólio para se inspirar</li>
+</ul>
+<p>Falamos bastante sobre a importância do portfólio, impresso ou online, e de como ele é fundamental para que você consiga uma excelente colocação no mercado.</p>
+<p>Sem um portfólio, a verdade é que você está em desvantagem – um passo atrás em relação aos seus concorrentes.</p>
+<p>Se mesmo com todas essas dicas ainda faltar um empurrãozinho para começar, não se preocupe.</p>
+<p>Trago aqui algumas inspirações que vão colocar sua cabeça para funcionar.</p>
+<p>Muita atenção nas próximas imagens.</p>
+<p>São alguns dos melhores portfólios da atualidade, aqueles que vão fazer você se inspirar e começar o seu imediatamente.</p>
+<p>Vamos a eles?</p>
+<ol>
+<li>Jeremy Sallee</li>
+</ol>
+<p>exemplo de portfolio online</p>
+<p>O portfólio do Jeremy é super simples e fácil de entender.</p>
+<p>Ele se apresenta em um texto curto, onde coloca links que vão levando para as outras áreas do portfólio, onde ele vai apresentando cada uma das suas habilidades.</p>
+<ol>
+<li>Adhemas Batista</li>
+</ol>
+<p>modelo de portfolio online</p>
+<p>Simplicidade no portfólio do brasileiro Adhemas Batista.</p>
+<p>Observe como ele deixa as informações mais importantes já em destaque logo de cara. Ele explica seu trabalho e também deixa as informações de contato destacadas no topo.</p>
+<p>O idioma é em inglês por ser um artista atuante em Los Angeles. Se você também considera prospectar clientes internacionais, pode ser uma boa alternativa.</p>
+<ol>
+<li>Robby Leonardi</li>
+</ol>
+<p>portfolio exemplo interativo</p>
+<p>Um pouco mais complexo e, por isso mesmo, inspirador até o último pixel.</p>
+<p>O portfólio de Robby é interativo. Você anda com o personagem para a direita, como em um vídeo game e, assim, navega pelos trabalhos do artista.</p>
+<p>Incrível, concorda?</p>
+<ol>
+<li>Marc Thomas</li>
+</ol>
+<p>exemplos de portfólio com contato profissional</p>
+<p>Redes sociais e e-mail de contato em destaque no portfólio de Marc Thomas. Com um site assim, não tem como não ser encontrado, certo?</p>
+<p>É tudo o que você precisa. Sem dúvida, uma inspiração e tanto.</p>
+<ol>
+<li>Ellen de Medeiros</li>
+</ol>
+<p>exemplo de portfólio impresso</p>
+<p>Veja que exemplo interessante neste portfólio impresso onde a profissional se apresenta de maneira clara e objetiva. Não são necessários rodeios quando você está certo da mensagem que quer passar.</p>
+<ol>
+<li>Gabriel Lira</li>
+</ol>
+<p>exemplo portfolio impresso</p>
+<p>Um exemplo extremamente funcional de portfólio impresso. A capa já é parte da ideia do projeto como um todo e estabelece um diálogo fluído com o material que vem a seguir.</p>
+<p>Conclusão</p>
+<p>conclusão: o que é portfólio?</p>
+<p>Portfólios são imprescindíveis para quem está chegando agora no mercado de trabalho, e mesmo para os já experientes, como forma de se modernizar.</p>
+<p>É uma forma rápida e quase que instantânea de mostrar seu talento criativo e seu nível profissional de maneira mais elaborada do que um currículo.</p>
+<p>Ainda que cada portfólio dependa totalmente da experiência e intenção do profissional, trouxe aqui dicas universais e alguns segredos infalíveis para que o seu material se destaque no mar de opções por aí.</p>
+<p>Como recurso visual, o portfólio segue sendo imbatível. Você não vai encontrar opção melhor para mostrar o seu trabalho do que ele.</p>
+<p>Por ser algo pessoal e de cunho bastante artístico, não há um modelo único e exclusivo de portfólio.</p>
+<p>Falei aqui sobre as duas maiores categorias: portfólio impresso e portfólio online.</p>
+<p>O primeiro une a elegância com a tradição. Você pode fazer uma bela pasta com seus principais trabalhos e levá-la sempre com você em reuniões e prospecções de novos clientes.</p>
+<p>Já o portfólio digital ganha em modernidade e praticidade. Pode ser feito na internet, como um site, blog, ou até como perfil em alguma rede social.</p>
+<p>As opções são inúmeras e falei delas aqui também.</p>
+<p>Todo esse esforço não faz sentido se você não fizer a manutenção e a divulgação do seu portfólio.</p>
+<p>Mantenha seu material sempre atualizado, com tudo de novo e digno de destaque que tem feito.</p>
+<p>As redes sociais cumprem com louvor o papel de ajudar com a divulgação desse material.</p>
+<p>Caso ainda precise de mais dicas, veja esse vídeo e refresque suas ideias.</p>
+<p><a href="https://neilpatel.com/br/blog/o-que-e-portfolio/?lang_geo=br">https://neilpatel.com/br/blog/o-que-e-portfolio/?lang_geo=br</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

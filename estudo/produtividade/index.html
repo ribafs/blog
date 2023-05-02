@@ -1,0 +1,836 @@
+<!-- Ocultar os botões next e previous -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Ribamar FS">
+        <link rel="canonical" href="https://ribafs.github.io/blog/estudo/produtividade/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Seja mais produtivo - RibaFS Blog</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link href="../../assets/css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RibaFS Blog</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Família <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../familia/pai_89/" class="dropdown-item">Aniversário dos 89 anos do Pai</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reflexões <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reflexoes/matando_semi_deuses/" class="dropdown-item">Matando semi deuses</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/pensamentos/" class="dropdown-item">Pensamentos</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/rac_logico/" class="dropdown-item">Raciocínio Lógico</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/saudosismo_inverso.pdf" class="dropdown-item">Saudosismo Inverso</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/viver/" class="dropdown-item">Viver</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dicas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../dicas/criar_site_do_zero/" class="dropdown-item">Criar site do zero</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/dicas_site/" class="dropdown-item">Dicas para criação de sites</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/gratuitos/" class="dropdown-item">Recursos gratuitos</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/informacoes/" class="dropdown-item">Informações úteis</a>
+</li>
+                                    
+<li>
+    <a href="../../dicas/pdf_form/" class="dropdown-item">Criando forms em PDF</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Programação <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">HTML</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/html/link_mesma.html" class="dropdown-item">Link para a mesma página</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/regex.html" class="dropdown-item">Expressões regulares</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tags_semanticas.html" class="dropdown-item">Tags semânticas</a>
+</li>
+            
+<li>
+    <a href="../../prog/html/tooltips.html" class="dropdown-item">Tooltips</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CSS</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/css/back-top.html" class="dropdown-item">Link para voltar ao topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/center_vert_hor.html" class="dropdown-item">Alinhar na vertical e horizontal</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/checkbox_custom.html" class="dropdown-item">Checkbox customizado</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/css_borders/" class="dropdown-item">Tipos de bordas</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fill-page.html" class="dropdown-item">Preencher a página</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_footer.html" class="dropdown-item">Rodapé fixo na base</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/fixed_menu.html" class="dropdown-item">Menu fixo no topo</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/forms/" class="dropdown-item">CSS para formulários</a>
+</li>
+            
+<li>
+    <a href="../../prog/css/master_css/" class="dropdown-item">Master CSS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Javascript</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/js/confirm_delete/" class="dropdown-item">Confirmação de exclusão</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/copy_paste/" class="dropdown-item">Copy & Paste</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/form_etapas.html" class="dropdown-item">Form em etapas</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/popups/" class="dropdown-item">Popups em JS</a>
+</li>
+            
+<li>
+    <a href="../../prog/js/three/" class="dropdown-item">Animação 3D em JS</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">UX</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../prog/ux/principios_ux.pdf" class="dropdown-item">Princípios do US</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/botaoGrande.html" class="dropdown-item">Botão grande</a>
+</li>
+            
+<li>
+    <a href="../../prog/ux/referencias/" class="dropdown-item">Referências</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../prog/site_pratico/" class="dropdown-item">Site prático</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/alert_message.html" class="dropdown-item">Alert Message</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/apixwebserver/" class="dropdown-item">API x Webservice</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/blog/" class="dropdown-item">Dicas sobre blogs</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/boas_praticas/" class="dropdown-item">Boas práticas</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/bons_livros/" class="dropdown-item">Bons livros</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/checklist_lancamento/" class="dropdown-item">Checklist de Lançamento</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/codando_real/" class="dropdown-item">Codando na vida real</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/computadores.pdf" class="dropdown-item">Computadores</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/debugar/" class="dropdown-item">Debugar</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/erro_logica/" class="dropdown-item">Erro de lógica</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/html30best_practices.pdf" class="dropdown-item">Boas práticas em HTML</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/linguagensprog.jpg" class="dropdown-item">Linguagens de programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/matematica_programacao/" class="dropdown-item">Matemática para programação</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/pagina_inicial.pdf" class="dropdown-item">Importância da página inicial</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/performance/" class="dropdown-item">Melhorando a performance</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/projeto-indonesio/" class="dropdown-item">Traduzindo um projeto do indonésio</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/recuperando_linux/" class="dropdown-item">Recuperando o Linux do Windows</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/responsivo/" class="dropdown-item">Site responsivo</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/selectext/" class="dropdown-item">Copiar texto de vídeos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/seo/" class="dropdown-item">Melhorando o SEO</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/site_estatico/" class="dropdown-item">Sites estáticos</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/sites_recomendacoes.pdf" class="dropdown-item">Recomendações para sites</a>
+</li>
+                                    
+<li>
+    <a href="../../prog/tipografia/" class="dropdown-item">Importância da tipografia</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../como_aprender/" class="dropdown-item">Dicas para aprender melhor</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Seja mais produtivo</a>
+</li>
+                                    
+<li>
+    <a href="../escolas/" class="dropdown-item">Escolas gratuitas</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trabalho <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../trabalho/contratar_sercontratado/" class="dropdown-item">Contratar e ser contratado</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/curriculo-exemplo/" class="dropdown-item">Exemplo de currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/desenv_web/" class="dropdown-item">Como se Tornar um Desenvolvedor Web</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/niveis_carreira/" class="dropdown-item">Níveis de carreira</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/portfolio/" class="dropdown-item">Dicas sobre portfolio</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/programador_habilidades/" class="dropdown-item">Habilidades de um programador</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/ser_bem_sucedido/" class="dropdown-item">Uma mente bem sucedida</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/talentosecia/" class="dropdown-item">Talentos & cia</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/usar_nao_curriculo/" class="dropdown-item">O que usar e o que não usar em currículo</a>
+</li>
+                                    
+<li>
+    <a href="../../trabalho/vocacao/" class="dropdown-item">O que é vocação?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Seletos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../seletos/abraco/" class="dropdown-item">A importância de um abraço</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/agua.html" class="dropdown-item">A importância da água</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/carater.html" class="dropdown-item">Sobre o caráter</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/criatividade.html" class="dropdown-item">Criatividade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/generosidade.html" class="dropdown-item">Generosidade</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/gratidao.html" class="dropdown-item">Gratidão</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/homens_deprimidos.html" class="dropdown-item">Depressão e homens</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/ideias_otimas.html" class="dropdown-item">Ótimas ideias</a>
+</li>
+                                    
+<li>
+    <a href="../../seletos/voce_sabia/" class="dropdown-item">Você sabia?</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diversos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../diversos/info_cient/" class="dropdown-item">Informações Científicas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/letras_trocadas/" class="dropdown-item">Consegue ler?</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/numeracao_casas/" class="dropdown-item">Numeração de casas</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/raios_lazer/" class="dropdown-item">Raios Lazar</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/nossa_lingua/" class="dropdown-item">Curiosidade da língua</a>
+</li>
+                                    
+<li>
+    <a href="../../diversos/ia/" class="dropdown-item">Inteligência artifial do ChatGPT)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sobre/contato/" class="dropdown-item">Contato</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/ribafs/blog/edit/master/docs/estudo/produtividade.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#produtividade-com-foco-na-programacao" class="nav-link">Produtividade com foco na programação</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#referencias" class="nav-link">Referências</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="produtividade-com-foco-na-programacao">Produtividade com foco na programação</h2>
+<p>Sabia que o teu dia pode durar mais de 24 horas?</p>
+<p>Provocação! Claro que não pode. Mas que você trabalhando ou estudando pode ter um maior rendimento que muita gente, ou seja, o teu dia tem 24 horas como o de qualquer pessoa, mas o teu resultado pode ser superior ao que você tinha antes e ao que outras pessoas tem. Isso não é impossível. Vamos aos detalhes.</p>
+<p>Existem fatores que roubam horas do teu dia e fatores que otimizam as horas do teu dia. Então é bom conhecê-los e tomar consciência deles caso você queira ter o melhor desempenho no seu dia.</p>
+<h3 id="fatores-que-reduzem-a-produtividade">Fatores que reduzem a produtividade</h3>
+<ul>
+<li>
+<p>Falta de interesse</p>
+</li>
+<li>
+<p>Falta de foco e de concentração</p>
+</li>
+<li>
+<p>Desorganização</p>
+</li>
+<li>
+<p>Memória ruim (desvalorização da memória)</p>
+</li>
+<li>
+<p>Desvalorização da Inteligência</p>
+</li>
+<li>
+<p>Ser controlado pelas distrações ou não ter nenhum controle (files/séries, celulares/computadores com redes sociais ativas, jogos, etc)</p>
+</li>
+<li>
+<p>Falta de prioridades</p>
+</li>
+<li>
+<p>Usar qualquer ferramenta de estudo e de trabalho sem critério de escolha</p>
+</li>
+<li>
+<p>Entre outros</p>
+</li>
+</ul>
+<h3 id="fatores-que-melhoram-a-produtividade">Fatores que melhoram a produtividade</h3>
+<ul>
+<li>
+<p>Gostar muito, se identificar com o que faz, se sentir motivado</p>
+</li>
+<li>
+<p>Organização (alguém organizado não perde tempo procurando coisas)</p>
+</li>
+<li>
+<p>Boa memória</p>
+</li>
+<li>
+<p>Boa inteligência (ajuda a entender e a resolver problemas)</p>
+</li>
+<li>
+<p>Lista de prioridades em ordem de prioridade. A mair importante, a segunda, ...</p>
+</li>
+<li>
+<p>Hiper foco no que é importante</p>
+</li>
+<li>
+<p>Controle rigoroso das distrações</p>
+</li>
+<li>
+<p>Ser cercado pelas melhores ferramentas de estudo e de trabalho, após cuidadosa pesquisa, testes e seleção</p>
+</li>
+<li>
+<p>aliases e scripts/batchs agilizam muito as tarefas do dia a dia. Eu instalo o laravel 8 na pasta blog assim: l8 blog</p>
+</li>
+<li>
+<p>Manter favoritos do navegador ajuda a agilizar as tarefas</p>
+</li>
+<li>
+<p>Guardar exemplos testado em pastas por assunto, para quando precisar encontrar rapidamente e não precisar ficar pendendo tempo com pesquisas e consultas aos grupos</p>
+</li>
+<li>
+<p>O uso de teclas de atalho no sistema operacional agiliza as atividades</p>
+</li>
+<li>
+<p>Entre outros. Fique atento para identificar.</p>
+</li>
+</ul>
+<h3 id="esclarecimento-inicial">Esclarecimento inicial</h3>
+<p>Não considero a produtividade o fator mais importante para adotar um software ou tomar uma decisão. Quando eu tomo uma decisão ela é baseada em alguns fatores: se atende às necessidades do cliente e/ou às minhas (funcionalidades), se é simples de usar pelos usuários (usabilidade), se é viável para mim implementá-la (se não precisarei estudar em demasia para isso), se a forma de realizar é produtiva, ou seja, se não erá exageradamente trabalhosa, se não demorará muito para que eu faça. Existem ainda muitos outros fatores e cada projeto tem suas peculiaridades. Então minha decisão é tomada partindo de uma análise geral. Aqui irei falar somente dos fatores que, para mim, melhoram a minha produtividade em geral.</p>
+<h3 id="teclas-de-atalho-customizadas">Teclas de Atalho customizadas</h3>
+<ul>
+<li>
+<p>Criar e usar teclas de atalho para abrir os principais softwares usados. Meus</p>
+</li>
+<li>
+<p>Firefox - Ctrl+Alt+F</p>
+</li>
+<li>
+<p>LibreOffice Writer - Ctrl+Alt+O</p>
+</li>
+<li>
+<p>Editor de texto/código - Xed - Ctrl+Alt+N</p>
+</li>
+<li>
+<p>Gerenciador de arquivos - nemo - Ctrl+Alt+E</p>
+</li>
+<li>
+<p>Editor de imagens - Kolourpaint - Ctrl+Alt+K</p>
+</li>
+<li>
+<p>Editor de programação - VSCode - Ctrl+Alt+V</p>
+</li>
+<li>
+<p>Desligar o computador - Ctrl+Alt+End (default do mint com cinnamon. No Windows basta Alt+F4)</p>
+</li>
+<li>
+<p>Terminal já abrir numa pasta em que estou trabalhando - gnome-terminal --working-directory=/backup/www/laravel - Ctrl+Alt+T</p>
+</li>
+<li>
+<p>Como o linux não me obriga criar extensões, eu crio meus arquivos texto sem extensão</p>
+</li>
+<li>
+<p>Se tenho uma pasta com vários arquivos de código onde estou trabalhando, gosto de renomear um arquivo que estou trabalhando atualmente com um 1 no início, para que ele seja o primeiro listado. Exemplo: 1projeto</p>
+</li>
+</ul>
+<h3 id="atalhos-do-teclado">Atalhos do Teclado</h3>
+<p>O uso das teclas abaixo (em aplicativos) agilizam o meu trabalho</p>
+<ul>
+<li>
+<p>Home - para ir para o início da linha atual</p>
+</li>
+<li>
+<p>Ctrl+Home - para ir para o início do documento atual</p>
+</li>
+<li>
+<p>End - final da linha</p>
+</li>
+<li>
+<p>Ctrl+End - final do documen to</p>
+</li>
+<li>
+<p>Alt+Tab - alternar entre os programas abertos</p>
+</li>
+<li>
+<p>Alt+F4 - Fechar a janela atual. No windows fechar inclusive o windows para desligar o computador. Se não fechar, clique no desktop e tecle novamente Alt+F4</p>
+</li>
+<li>
+<p>Ctrl+W - fechar somente a janela atual aberta (em muitos softwares)</p>
+</li>
+<li>
+<p>Shift+Insert - colar um texto no terminal (o texto precisa estar selecionado, não requer Ctrl+C). Somente linux</p>
+</li>
+<li>
+<p>Shutter - Capturar a tela atual criando uma imagem e jogando na memória</p>
+</li>
+<li>
+<p>No windows se pode adicionar teclas de atalho para abrir sites.</p>
+</li>
+<li>
+<p>Deixar o cursor no ponto inicial - teclar Ctrl+Shift11+Home - para selecionar todo o texto entre o ponto inicial e o início do texto para apagar ou outro.</p>
+</li>
+<li>
+<p>Também o contrário com Ctrl+Shift+End</p>
+</li>
+<li>
+<p>Ctrl+L - Foco no location do navegador (caixa de URL)</p>
+</li>
+<li>
+<p>Fn+Seta para cima ou para baixo - passar uma página (Em notebooks)</p>
+</li>
+</ul>
+<h3 id="selecao-de-texto">Seleção de texto</h3>
+<ul>
+<li>
+<p>Selecionar um de uma lista, prender o Shift e clicar no último para selecionar toda a linha ou faixa do primeiro ao último</p>
+</li>
+<li>
+<p>Selecionar um, prender o Ctrl e clicar em outros fora de sequência para selecionar fora de sequência</p>
+</li>
+</ul>
+<h3 id="softwares">Softwares</h3>
+<p>Como temos geralmente várias alternativas de softwares, então eu pesquiso os mais populares e alguns outros, experimento e escolho os de que mais gosto e que atendem minhas necessidades.</p>
+<h3 id="minha-lista-e">Minha lista é:</h3>
+<ul>
+<li>
+<p>Linux Mint com Cinnamon (o sistema linux é o mais adequado para meu estudo e trabalho e também gosto em termos de filosofia de criação e distribuição e a distribuição Mint é a que melhor atende minhas necessidades sendo a mais produtiva)</p>
+</li>
+<li>
+<p>Firefox</p>
+</li>
+<li>
+<p>Adminer (https://adminer.org) - gerenciador de bancos de dados com suporte a diversos SGBDs (o phpmyadmin é somente para mysql). Bem simples, ágil e produtivo.</p>
+</li>
+<li>
+<p>DbVisualizer - gera DER de diversos SGBDs</p>
+</li>
+<li>
+<p>Xed - editor de texto e de código que uso com grande frequência. Seu ponto forte é a leveza com bons recursos.</p>
+</li>
+<li>
+<p>VSCode - editor de código a quem recorro quando empanco no xed, expecialmente quando quero uma sintaxe que nunca memorizo.</p>
+</li>
+<li>
+<p>Kolourpaint - editor de imagens parecido com o MS Paint mas com um pouco mais de recursos</p>
+</li>
+<li>
+<p>Alarm-clock - agenda com alarme</p>
+</li>
+<li>
+<p>Shutter - captura de tela com bons recursos</p>
+</li>
+<li>
+<p>Vokoscreen - gravação do desktop</p>
+</li>
+</ul>
+<p>Lembre que preferência tem muito de pessoal, portanto não precisa me seguir nessas. Faça suas escolhas.</p>
+<h3 id="procurar-e-sobrescrever">Procurar e Sobrescrever</h3>
+<p>Em um único arquivo</p>
+<p>LibreOffice, Gedit, Xed, VSCode e outros</p>
+<p>Ctrl+H</p>
+<p>Em todos os arquivos de um projeto/pasta no VSCode</p>
+<p>Ctrl+Shift+H</p>
+<h3 id="favoritos">Favoritos</h3>
+<p>Sei que o Google encontra quase tudo, mas gosto de manter meus links preferidos por perto e organizados por pastas no navegador, para novas consultas serem mais precisas e rápidas. Lembre que algumas vezes perdemos muito tempo pesquisando.</p>
+<h3 id="fator-pessoal">Fator Pessoal</h3>
+<p>Quase todas as nossas escolhas é pessoal. Existem softwares que são produtivos para muita gente e até para a maioria, mas não para todos. Cada um de nós tem um background (um conjunto de experiências que teve durante a vida) que acarreta gostos, aversões, afinidades, etc. por A e não por B. Com outra pessoa acontece diferente ou não. Veja o caso do editor de texto/código VSCode, que atualmente é um dos mais populares. Mas existe prpogramador que prefere o Gedit, Notepad++, Xed e até o Vi ou Emacs. Cada um destes tem background e perfil diferente. Também existem imposições de empresas que precisamos seguir. Isso eu não discuto. Se trabalho numa empresa e ele exige que se use tal ferrametna, então usamos. Tem uns que não se sentem confortável usando o VSCode ou PHPStorm, pois precisa, é, precisa de um Vi para melhor aproveitar seu potencial e não sei mais o que.</p>
+<p>Meu sistema operacional preferido e único para uso no desktop é o Linux, na distribuição Mint com o ambiente gráfico Cinnamon. Mas sei que a maioria dos programadores usa o Windows, que é o SO mais usado.</p>
+<p>Meu CMS preferido é o Joomla. Mas eu sei que o CMS mais usado do mundo é o Wordpress. Existem alguns fatores que me levaram a escolher o Joomla, mas claro que estes fatores são meio pessoais, portanto não devo dizer que o melhor CMS do mundo é o Joomla, pois sei que cada um tem suas preferências. E isso é bom, termos algumas alternativas.</p>
+<p>Os fatores que levam a uma escolha são: conhecimento (não posso usar o vi se não conheço seus comandos), gostos (posso até saber usar o vi mas não gosto e prefiro outro) e diversos outros fatores.</p>
+<h3 id="criacao-de-scriptsbatchs-e-aliases">Criação de scripts/batchs e aliases</h3>
+<p>Tenho um diário onde registro, de vez em quando, algumas observações, pensamentos, reflexões, sentimentos, etc. Ele tem sido muito útil para que eu me conheça, especialmente nas releituras.</p>
+<h4 id="primeira-etapa">Primeira etapa</h4>
+<p>Inicialmente eu abria o gerenciador de arquivos, ia até seu diretório e o abria com um clique (sim, um clique, pois configurei meu gerenciador de arquivos para abrir com um único clique).</p>
+<p>Resolvi otimizar os passos acima, pois como faço isso quase diariamente, se reduzir algumas etapas estarei ganhando algum tempo a cada dia. Assim, se otimizamos todas as nossas atividades diárias, estaremos ganhando tempo.</p>
+<h4 id="segunda-etapa">Segunda etapa</h4>
+<p>Eu tenho programadas teclas de atalho para abrir cada um dos softwares que mais uso. Ao invés de pegar o mouse e efetuar alguns cliques, com apenas uma combinação de teclas eu abro o Firefox, o LibreOiffice Writer, etc.</p>
+<p>Então resolvi criarf uma nova tecla de atalho, que abrirá o LibreOffice que já virá com o meu diário. Beleta, agora apenas teclo
+Ctrl+Alt+D e meu diário está na minha frente.</p>
+<h4 id="terceira-etapa">Terceira etapa</h4>
+<p>Acontece que eu diariamente faço uma cópia de alguns arquivos criados/alterados em casa para levar para o trabalho e vice versa. Um dos arquivos que levo é o diário.</p>
+<p>Resolvi criar um script e usuar na tecla de atalho ao invés do comando para abrir o LO. Agora a tecla de atalho abre o script
+/usr/local/bin/diario</p>
+<p>O script</p>
+<p>libreoffice --writer /backup/pessoais/diario.odt
+cp /backup/pessoais/diario.odt /backup/transp</p>
+<p>Beleza, agora com Ctrl+Alt+D eu abro o diário no LO, faço minhas anotações e quando salvo e fecho ele faz uma cópia para a pasta transp.</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>
+<p>5 Coisas Que Matam a Sua Produtividade - Wendel Carvalho</p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=T17-Z_2P38o">https://www.youtube.com/watch?v=T17-Z_2P38o</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ribafs/livros">https://github.com/ribafs/livros</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ribafs/references">https://github.com/ribafs/references</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ribafs/all-awesomes">https://github.com/ribafs/all-awesomes</a></p>
+</li>
+<li>
+<p><a href="https://apoioadocencia.ufes.br/sites/apoioadocencia.ufes.br/files/field/anexo/os_8_passos_para_se_tornar_um_estudante_de_alta_performance_e-book.pdf">https://apoioadocencia.ufes.br/sites/apoioadocencia.ufes.br/files/field/anexo/os_8_passos_para_se_tornar_um_estudante_de_alta_performance_e-book.pdf</a></p>
+<p><div class="row">
+    <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+</div></p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+    <div class="row">
+        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

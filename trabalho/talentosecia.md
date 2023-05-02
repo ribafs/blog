@@ -1,0 +1,3 @@
+## Talentos & cia
+
+![](talentosecia.jpg)
