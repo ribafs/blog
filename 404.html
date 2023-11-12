@@ -12,15 +12,12 @@
         <link href="/blog/css/bootstrap.min.css" rel="stylesheet">
         <link href="/blog/css/font-awesome.min.css" rel="stylesheet">
         <link href="/blog/css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/rainbow.min.css">
         <link href="/blog/assets/css/extra.css" rel="stylesheet">
-
-        <script src="/blog/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/blog/js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/html.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -74,6 +71,10 @@
                                     
 <li>
     <a href="/blog/reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="/blog/reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -486,12 +487,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="/blog/js/jquery-3.6.0.min.js"></script>
+        <script src="/blog/js/bootstrap.min.js"></script>
         <script>
             var base_url = "/blog/",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/blog/js/base.js" defer></script>
-        <script src="/blog/search/main.js" defer></script>
+        <script src="/blog/js/base.js"></script>
+        <script src="/blog/search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

@@ -13,15 +13,12 @@
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/rainbow.min.css">
         <link href="../../assets/css/extra.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/html.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -75,6 +72,10 @@
                                     
 <li>
     <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -580,40 +581,40 @@
 <p><a href="http://meyerweb.com/eric/tools/css/reset/index.html">http://meyerweb.com/eric/tools/css/reset/index.html</a></p>
 <h3 id="podemos-comecar-com-este">Podemos começar com este:</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">html</span><span class="o">,</span><span class="w"> </span><span class="nt">body</span><span class="o">,</span><span class="w"> </span><span class="nt">div</span><span class="o">,</span><span class="w"> </span><span class="nt">span</span><span class="o">,</span><span class="w"> </span>
-<span class="nt">h1</span><span class="o">,</span><span class="w"> </span><span class="nt">h2</span><span class="o">,</span><span class="w"> </span><span class="nt">h3</span><span class="o">,</span><span class="w"> </span><span class="nt">h4</span><span class="o">,</span><span class="w"> </span><span class="nt">h5</span><span class="o">,</span><span class="w"> </span><span class="nt">h6</span><span class="o">,</span><span class="w"> </span><span class="nt">p</span><span class="o">,</span><span class="w"> </span><span class="nt">blockquote</span><span class="o">,</span><span class="w"> </span><span class="nt">pre</span><span class="o">,</span>
-<span class="nt">a</span><span class="o">,</span><span class="w"> </span><span class="nt">abbr</span><span class="o">,</span><span class="w"> </span><span class="nt">acronym</span><span class="o">,</span><span class="w"> </span><span class="nt">address</span><span class="o">,</span><span class="w"> </span><span class="nt">big</span><span class="o">,</span><span class="w"> </span><span class="nt">cite</span><span class="o">,</span><span class="w"> </span><span class="nt">code</span><span class="o">,</span>
-<span class="nt">img</span><span class="o">,</span><span class="w"> </span><span class="nt">ins</span><span class="o">,</span><span class="w"> </span><span class="nt">kbd</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="o">,</span><span class="w"> </span><span class="nt">s</span><span class="o">,</span><span class="w"> </span><span class="nt">samp</span><span class="o">,</span>
+<span class="nt">h1</span><span class="o">,</span><span class="w"> </span><span class="nt">h2</span><span class="o">,</span><span class="w"> </span><span class="nt">h3</span><span class="o">,</span><span class="w"> </span><span class="nt">h4</span><span class="o">,</span><span class="w"> </span><span class="nt">h5</span><span class="o">,</span><span class="w"> </span><span class="nt">h6</span><span class="o">,</span><span class="w"> </span><span class="nt">p</span><span class="o">,</span><span class="w"> </span><span class="nt">blockquote</span><span class="o">,</span><span class="w"> </span><span class="nt">pre</span><span class="o">,</span><span class="w"></span>
+<span class="nt">a</span><span class="o">,</span><span class="w"> </span><span class="nt">abbr</span><span class="o">,</span><span class="w"> </span><span class="nt">acronym</span><span class="o">,</span><span class="w"> </span><span class="nt">address</span><span class="o">,</span><span class="w"> </span><span class="nt">big</span><span class="o">,</span><span class="w"> </span><span class="nt">cite</span><span class="o">,</span><span class="w"> </span><span class="nt">code</span><span class="o">,</span><span class="w"></span>
+<span class="nt">img</span><span class="o">,</span><span class="w"> </span><span class="nt">ins</span><span class="o">,</span><span class="w"> </span><span class="nt">kbd</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="o">,</span><span class="w"> </span><span class="nt">s</span><span class="o">,</span><span class="w"> </span><span class="nt">samp</span><span class="o">,</span><span class="w"></span>
 <span class="nt">small</span><span class="o">,</span><span class="w"> </span><span class="nt">strike</span><span class="o">,</span><span class="w"> </span><span class="nt">strong</span><span class="o">,</span><span class="w"> </span>
-<span class="nt">dl</span><span class="o">,</span><span class="w"> </span><span class="nt">dt</span><span class="o">,</span><span class="w"> </span><span class="nt">dd</span><span class="o">,</span><span class="w"> </span><span class="nt">ol</span><span class="o">,</span><span class="w"> </span><span class="nt">ul</span><span class="o">,</span><span class="w"> </span><span class="nt">li</span><span class="o">,</span>
-<span class="nt">fieldset</span><span class="o">,</span><span class="w"> </span><span class="nt">form</span><span class="o">,</span><span class="w"> </span><span class="nt">label</span><span class="o">,</span><span class="w"> </span><span class="nt">legend</span><span class="o">,</span>
-<span class="nt">table</span><span class="o">,</span><span class="w"> </span><span class="nt">caption</span><span class="o">,</span><span class="w"> </span><span class="nt">tbody</span><span class="o">,</span><span class="w"> </span><span class="nt">tfoot</span><span class="o">,</span><span class="w"> </span><span class="nt">thead</span><span class="o">,</span><span class="w"> </span><span class="nt">tr</span><span class="o">,</span><span class="w"> </span><span class="nt">th</span><span class="o">,</span><span class="w"> </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">        </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">        </span><span class="k">vertical-align</span><span class="p">:</span><span class="w"> </span><span class="kc">baseline</span><span class="p">;</span>
-<span class="w">        </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">transparent</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">body</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">ol</span><span class="o">,</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">list-style</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">blockquote</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">quotes</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">blockquote</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="nt">blockquote</span><span class="p">:</span><span class="nd">after</span><span class="o">,</span>
-<span class="nt">q</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span>
-<span class="w">        </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nt">dl</span><span class="o">,</span><span class="w"> </span><span class="nt">dt</span><span class="o">,</span><span class="w"> </span><span class="nt">dd</span><span class="o">,</span><span class="w"> </span><span class="nt">ol</span><span class="o">,</span><span class="w"> </span><span class="nt">ul</span><span class="o">,</span><span class="w"> </span><span class="nt">li</span><span class="o">,</span><span class="w"></span>
+<span class="nt">fieldset</span><span class="o">,</span><span class="w"> </span><span class="nt">form</span><span class="o">,</span><span class="w"> </span><span class="nt">label</span><span class="o">,</span><span class="w"> </span><span class="nt">legend</span><span class="o">,</span><span class="w"></span>
+<span class="nt">table</span><span class="o">,</span><span class="w"> </span><span class="nt">caption</span><span class="o">,</span><span class="w"> </span><span class="nt">tbody</span><span class="o">,</span><span class="w"> </span><span class="nt">tfoot</span><span class="o">,</span><span class="w"> </span><span class="nt">thead</span><span class="o">,</span><span class="w"> </span><span class="nt">tr</span><span class="o">,</span><span class="w"> </span><span class="nt">th</span><span class="o">,</span><span class="w"> </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">vertical-align</span><span class="p">:</span><span class="w"> </span><span class="kc">baseline</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">transparent</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">ol</span><span class="o">,</span><span class="w"> </span><span class="nt">ul</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">list-style</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">blockquote</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">quotes</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">blockquote</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="nt">blockquote</span><span class="p">:</span><span class="nd">after</span><span class="o">,</span><span class="w"></span>
+<span class="nt">q</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="w"> </span><span class="nt">q</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="nt">table</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">border-collapse</span><span class="p">:</span><span class="w"> </span><span class="kc">collapse</span><span class="p">;</span>
-<span class="w">        </span><span class="k">border-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nt">table</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">border-collapse</span><span class="p">:</span><span class="w"> </span><span class="kc">collapse</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">border-spacing</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>Não crie páginas sem a tag <head> e seu precioso conteúdo</p>
@@ -633,17 +634,17 @@
         </div>
 
         <footer class="col-md-12">
-    <div class="row">
-        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
-    </div>
-
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

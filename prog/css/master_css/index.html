@@ -13,15 +13,12 @@
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/rainbow.min.css">
         <link href="../../../assets/css/extra.css" rel="stylesheet">
-
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/html.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -75,6 +72,10 @@
                                     
 <li>
     <a href="../../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="../../../reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -501,29 +502,29 @@
 <p>Criar o </p>
 <p>master.css</p>
 <p>E nele importar os demais:</p>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;reset.css&quot;</span><span class="o">)</span><span class="p">;</span>
-<span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;format.css&quot;</span><span class="o">)</span><span class="p">;</span>
-<span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;layout.css&quot;</span><span class="o">)</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;reset.css&quot;</span><span class="o">)</span><span class="p">;</span><span class="w"></span>
+<span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;format.css&quot;</span><span class="o">)</span><span class="p">;</span><span class="w"></span>
+<span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;layout.css&quot;</span><span class="o">)</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 
 <p>Na página html:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nt">style</span><span class="w"> </span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span><span class="w"> </span><span class="nt">media</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span><span class="o">&gt;</span><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;master.css&quot;</span><span class="o">)&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nt">style</span><span class="w"> </span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span><span class="w"> </span><span class="nt">media</span><span class="o">=</span><span class="s2">&quot;screen&quot;</span><span class="o">&gt;</span><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;master.css&quot;</span><span class="o">)&lt;/</span><span class="nt">style</span><span class="o">&gt;</span><span class="w"></span>
 </code></pre></div></div>
             </div>
         </div>
 
         <footer class="col-md-12">
-    <div class="row">
-        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
-    </div>
-
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

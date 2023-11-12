@@ -13,15 +13,12 @@
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/obsidian.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/rainbow.min.css">
         <link href="../../assets/css/extra.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/php.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/html.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/html.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -75,6 +72,10 @@
                                     
 <li>
     <a href="../../reflexoes/voz/" class="dropdown-item">Voz</a>
+</li>
+                                    
+<li>
+    <a href="../../reflexoes/chatgpt/" class="dropdown-item">Teste do ChatGPT</a>
 </li>
                                 </ul>
                             </li>
@@ -501,9 +502,9 @@
 </ul>
 <p>Aqui, vamos definir uma classe que só será carregada quando a largura de tela do dispositivo for de 900 pixels ou meno4. E, ainda, vai alterar a largura da classe ".menu" para 100% do tamanho da tela do navegador. </p>
 <p>Um media query que permite fazer isso deve se parecer com este código abaixo:</p>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="c">/* .menu { width:100%; } */</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c">/* .menu { width:100%; } */</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>Alguns elementos da página não mudam ao serem acessados por dispositivos diferentes:</p>
@@ -524,43 +525,43 @@
 <p>Também é possível configurar larguras fixas para larguras particulares de tela. Por exemplo, configurar a largura de menu para 600 pixels se a to tamanho da tela do dispositivo for de 900 pixels. Veja abaixo códigos que você pode usar para aplicar essas mudanças. </p>
 <p>Exemplos
     • Se o tamanho da tela for 900 pixels ou menor, é possível configurar uma classe de largura de menus para 600 pixels usando: </p>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="c">/* .menu { width:600px; } */</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c">/* .menu { width:600px; } */</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>•<span class="w"> </span><span class="nv">Se</span><span class="w"> </span><span class="nv">o</span><span class="w"> </span><span class="nv">tamanho</span><span class="w"> </span><span class="nv">da</span><span class="w"> </span><span class="nv">tela</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="mi">700</span><span class="w"> </span><span class="nv">pixels</span><span class="w"> </span><span class="nv">ou</span><span class="w"> </span><span class="nv">menor</span>,<span class="w"> </span>é<span class="w"> </span><span class="nv">poss</span>í<span class="nv">vel</span><span class="w"> </span><span class="nv">configurar</span><span class="w"> </span><span class="nv">uma</span><span class="w"> </span><span class="nv">classe</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">largura</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">menus</span><span class="w"> </span><span class="nv">para</span><span class="w"> </span><span class="mi">400</span><span class="w"> </span><span class="nv">pixels</span><span class="w"> </span><span class="nv">usando</span>:
+<div class="highlight"><pre><span></span><code>• <span class="nv">Se</span> <span class="nv">o</span> <span class="nv">tamanho</span> <span class="nv">da</span> <span class="nv">tela</span> <span class="k">for</span> <span class="mi">700</span> <span class="nv">pixels</span> <span class="nv">ou</span> <span class="nv">menor</span>, é <span class="nv">poss</span>í<span class="nv">vel</span> <span class="nv">configurar</span> <span class="nv">uma</span> <span class="nv">classe</span> <span class="nv">de</span> <span class="nv">largura</span> <span class="nv">de</span> <span class="nv">menus</span> <span class="nv">para</span> <span class="mi">400</span> <span class="nv">pixels</span> <span class="nv">usando</span>:
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">700px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="c">/* .menu { width:400px; } */</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">only</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-device-width</span><span class="o">:</span><span class="w"> </span><span class="nt">700px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="c">/* .menu { width:400px; } */</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>O tráfego de dispositivos móveis na web ultrapassou os 51% tornando-se assim muito importante que a página se adapte a ele, caso contrário perderemos visitação.</p>
 <p>Dicas:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">img</span><span class="p">{</span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="nt">img</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">.</span><span class="nc">img-full</span><span class="p">{</span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="p">.</span><span class="nc">img-full</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">780px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="p">.</span><span class="nc">full-width-img</span><span class="w"> </span><span class="p">{</span>
-<span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
-<span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="nt">screen</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">780px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">.</span><span class="nc">full-width-img</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"></span>
+<span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>Importante usar srcset</p>
 <p>Para servir diferentes versões escalonadas para diferentes dispositivos, você precisa usar o atributo HTML srcset em suas tags img, para especificar mais de um tamanho de imagem para escolher.</p>
 <div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nt">img</span><span class="w"> </span><span class="nt">srcset</span><span class="o">=</span><span class="s2">&quot;large-img.jpg 1024w,</span>
 <span class="s2">middle-img.jpg 640w,</span>
-<span class="s2">small-img.jpg  320w&quot;</span>
-<span class="nt">src</span><span class="o">=</span><span class="s2">&quot;small.jpg&quot;</span>
-<span class="o">/&gt;</span>
+<span class="s2">small-img.jpg  320w&quot;</span><span class="w"></span>
+<span class="nt">src</span><span class="o">=</span><span class="s2">&quot;small.jpg&quot;</span><span class="w"></span>
+<span class="o">/&gt;</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="tamanhos-de-tela-comuns">Tamanhos de tela comuns</h3>
@@ -576,24 +577,24 @@
 
 <h3 id="available-breakpoints">Available breakpoints</h3>
 <p>Bootstrap includes six default breakpoints, sometimes referred to as grid tiers, for building responsively. These breakpoints can be customized if you’re using our source Sass files.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">Breakpoint</span><span class="w">  </span><span class="nt">Class</span><span class="w"> </span><span class="nt">infix</span><span class="w">     </span><span class="nt">Dimensions</span>
-<span class="nt">X-Small</span><span class="w">     </span><span class="nt">None</span><span class="w">            </span><span class="o">&lt;</span><span class="nt">576px</span>
-<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span>
-<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span>
-<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span>
-<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span>
-<span class="nt">Extra</span><span class="w"> </span><span class="nt">extra</span><span class="w"> </span><span class="nt">large</span><span class="w">   </span><span class="nt">xxl</span><span class="w">     </span><span class="err">≥</span><span class="nt">1400px</span>
-<span class="err">```</span><span class="nt">css</span>
-<span class="o">[</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/](</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/)</span>
+<div class="highlight"><pre><span></span><code><span class="nt">Breakpoint</span><span class="w">  </span><span class="nt">Class</span><span class="w"> </span><span class="nt">infix</span><span class="w">     </span><span class="nt">Dimensions</span><span class="w"></span>
+<span class="nt">X-Small</span><span class="w">     </span><span class="nt">None</span><span class="w">            </span><span class="o">&lt;</span><span class="nt">576px</span><span class="w"></span>
+<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span><span class="w"></span>
+<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span><span class="w"></span>
+<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span><span class="w"></span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span><span class="w"></span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">extra</span><span class="w"> </span><span class="nt">large</span><span class="w">   </span><span class="nt">xxl</span><span class="w">     </span><span class="err">≥</span><span class="nt">1400px</span><span class="w"></span>
+<span class="err">```</span><span class="nt">css</span><span class="w"></span>
+<span class="o">[</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/](</span><span class="nt">https</span><span class="o">://</span><span class="nt">getbootstrap</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">docs</span><span class="o">/</span><span class="nt">5</span><span class="p">.</span><span class="nc">0</span><span class="o">/</span><span class="nt">layout</span><span class="o">/</span><span class="nt">breakpoints</span><span class="o">/)</span><span class="w"></span>
 
-<span class="nt">Principais</span>
-<span class="err">```</span><span class="nt">css</span>
-<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span>
-<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span>
-<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span>
-<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span>
+<span class="nt">Principais</span><span class="w"></span>
+<span class="err">```</span><span class="nt">css</span><span class="w"></span>
+<span class="nt">Small</span><span class="w">       </span><span class="nt">sm</span><span class="w">              </span><span class="err">≥</span><span class="nt">576px</span><span class="w"></span>
+<span class="nt">Medium</span><span class="w">      </span><span class="nt">md</span><span class="w">              </span><span class="err">≥</span><span class="nt">768px</span><span class="w"></span>
+<span class="nt">Large</span><span class="w">       </span><span class="nt">lg</span><span class="w">              </span><span class="err">≥</span><span class="nt">992px</span><span class="w"></span>
+<span class="nt">Extra</span><span class="w"> </span><span class="nt">large</span><span class="w"> </span><span class="nt">xl</span><span class="w">              </span><span class="err">≥</span><span class="nt">1200px</span><span class="w"></span>
 
-<span class="nt">PX</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">EM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">REM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">Viewport</span><span class="w"> </span><span class="nt">Units</span><span class="w"> </span><span class="nt">para</span><span class="w"> </span><span class="nt">projeto</span><span class="w"> </span><span class="nt">responsivo</span>
+<span class="nt">PX</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">EM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">REM</span><span class="w"> </span><span class="nt">vs</span><span class="w"> </span><span class="nt">Viewport</span><span class="w"> </span><span class="nt">Units</span><span class="w"> </span><span class="nt">para</span><span class="w"> </span><span class="nt">projeto</span><span class="w"> </span><span class="nt">responsivo</span><span class="w"></span>
 <span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">PX</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">um</span><span class="w"> </span><span class="nt">único</span><span class="w"> </span><span class="nt">pixel</span><span class="w"> </span>
 <span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">EM</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">unidade</span><span class="w"> </span><span class="nt">relativa</span><span class="w"> </span><span class="nt">com</span><span class="w"> </span><span class="nt">base</span><span class="w"> </span><span class="nt">no</span><span class="w"> </span><span class="nt">tamanho</span><span class="w"> </span><span class="nt">da</span><span class="w"> </span><span class="nt">fonte</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">elemento</span><span class="o">.</span><span class="w"> </span>
 <span class="w">    </span><span class="err">•</span><span class="w"> </span><span class="nt">REM</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="nt">unidade</span><span class="w"> </span><span class="nt">relativa</span><span class="w"> </span><span class="nt">com</span><span class="w"> </span><span class="nt">base</span><span class="w"> </span><span class="nt">no</span><span class="w"> </span><span class="nt">tamanho</span><span class="w"> </span><span class="nt">da</span><span class="w"> </span><span class="nt">fonte</span><span class="w"> </span><span class="nt">do</span><span class="w"> </span><span class="nt">elemento</span><span class="o">.</span><span class="w"> </span>
@@ -610,61 +611,61 @@
 </code></pre></div>
 
 <p>Podemos dizer que se a largura da tela for maior que 768 px use um estilo diferente</p>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">.</span><span class="nc">myImage</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="nc">myImage</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <p>O 768px é um breakpoint, menor ou igual use o media querie, maior não use.</p>
 <h3 id="flexbox">Flexbox</h3>
 <p>O display: flex transforma o <nav> em uma caixa flexível, e o justify-content: space-around informa ao navegador que os itens dentro da caixa flexível devem ter espaço ao redor deles. Assim, o navegador distribui todo o espaço restante igualmente entre os três itens.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-around</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-around</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="tipografia-responsiva">Tipografia responsiva</h3>
-<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">nav</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nt">nav</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">html</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div></div>
             </div>
         </div>
 
         <footer class="col-md-12">
-    <div class="row">
-        <p class="footer col-lg-12 mb-0" style="padding-right: 150px"><i>Ribamar FS - 2022</i></p>
-    </div>
-
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
