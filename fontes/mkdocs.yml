@@ -12,7 +12,7 @@ extra_css:
     - assets/css/extra.css
 
 theme:
-    name: darkly
+    name: slate
     custom_dir: sources/overrides
     favicon: img/favicon.ico
     highlightjs: true
