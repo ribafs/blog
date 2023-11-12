@@ -4,7 +4,7 @@ p {
 }
 
 .fonts{
-    color: #ad5114;
+    color: #598cbf;
 }
 
 @media only screen and (max-width: 478px) {
@@ -14,10 +14,6 @@ p {
     .footer{
         padding-left: 100px
     }
-
-    .sub-title{
-        padding-left: 150px;        
-    }
 }
 @media only screen and (min-width: 478px) {
     .logo {
@@ -26,11 +22,6 @@ p {
     .cards {
         margin-left: -350px;
     }
-
-    .sub-title{
-        margin-left: -350px;        
-    }
-
 }
 
 .lasts {
@@ -49,10 +40,10 @@ p {
     position:fixed;
     left: 0%;
     bottom:0px;
-    background-color: #93410a;
+    background-color: #264f77;
 }
 
-/*footer{display: none}*/
+footer{display: none}
 /* Ocultar sidebar */
 .bs-sidebar{
     display: none;
